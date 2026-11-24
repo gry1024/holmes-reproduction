@@ -34,16 +34,14 @@
 
 ## 再次运行
 
-以下命令在 WSL Ubuntu-22.04 内执行，工作目录为论文所在的 `pre` 文件夹：
+首次运行请先完成 [Quickstart](../README.md#quickstart)。特征和权重准备好后，在仓库根目录、已激活的 Python 环境中可逐项复评。
 
 ```bash
-cd /mnt/e/just_put_everything_you_need_here/多模态学习/pre
-PY=/home/groy/.venvs/holmes-eval/bin/python
-"$PY" reproduction/scripts/evaluate.py --dataset cha --checkpoint reproduction/checkpoints/cha.ckpt
-"$PY" reproduction/scripts/evaluate.py --dataset act --checkpoint reproduction/checkpoints/act.ckpt
-"$PY" reproduction/scripts/evaluate.py --dataset tvr --multi --checkpoint reproduction/checkpoints/tvr-multi.ckpt
-"$PY" reproduction/scripts/evaluate.py --dataset tvr --checkpoint reproduction/checkpoints/tvr.ckpt
-"$PY" reproduction/scripts/compare_results.py
+python reproduction/scripts/evaluate.py --dataset cha --checkpoint reproduction/checkpoints/cha.ckpt
+python reproduction/scripts/evaluate.py --dataset act --checkpoint reproduction/checkpoints/act.ckpt
+python reproduction/scripts/evaluate.py --dataset tvr --multi --checkpoint reproduction/checkpoints/tvr-multi.ckpt
+python reproduction/scripts/evaluate.py --dataset tvr --checkpoint reproduction/checkpoints/tvr.ckpt
+python reproduction/scripts/compare_results.py
 ```
 
 全部数据下载及转换完成后，不需要再次下载或重新转换即可运行上述命令。结果 JSON 会覆盖同名文件，另行试验时请先保留现有结果。

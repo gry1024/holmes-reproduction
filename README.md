@@ -12,16 +12,43 @@
 | 复现环境与重跑命令 | [复现说明](reproduction/README.md) |
 | 本次整理与清理记录 | [整理记录](reproduction/archive/CLEANUP-2026-11-24.md) |
 
-## 从 GitHub 获取工作区
+## Quickstart
+
+需要 Linux 或 WSL2、Python 3.11 和 NVIDIA CUDA GPU。请先用有仓库访问权限的 GitHub 账号登录 `gh`。论文、笔记和已有评测结果可直接浏览。
+
+### 1. 克隆并安装依赖
 
 ```bash
-gh auth login
 gh repo clone gry1024/holmes-reproduction -- --recurse-submodules
 cd holmes-reproduction
-python reproduction/scripts/github_snapshot.py restore
+python3.11 -m venv .venv
+source .venv/bin/activate
+python -m pip install torch==2.0.1 --index-url https://download.pytorch.org/whl/cu117
+python -m pip install -r reproduction/environment.freeze.txt
+mkdir -p reproduction/downloads
 ```
 
-代码、论文、笔记和评测报告在 Git 仓库内。`ICML26-Holmes` 是固定到作者代码版本的子模块。正式权重、完整压缩包、已转换的数据及旧下载分片放在 [Release 附件](https://github.com/gry1024/holmes-reproduction/releases/tag/workspace-files-v1)。出现 `snapshot-manifest.json` 表示完整快照已上传。恢复脚本需要 Python 3.9 或更新版本，会校验每个附件的 SHA-256，并恢复到原有相对路径。完整恢复需要约 126 GiB 磁盘空间。
+### 2. 下载数据与权重
+
+把表中的七个 ZIP 按指定文件名保存到 `reproduction/downloads/`。下载量约 38.2 GiB，建议为下载及转换预留至少 130 GiB。
+
+| 内容 | 官方下载 | 保存文件名 |
+|---|---|---|
+| Charades-STA 特征 | [Google Drive](https://drive.google.com/file/d/1NVM6wlBDsV2x6x4MswYmCWhzLYIhrhHs/view) | `charades-parallel.zip` |
+| ActivityNet Captions 特征 | [Google Drive](https://drive.google.com/file/d/1frCLujoWK1Aj0xGWfMO0U1qQLUrLvXgy/view) | `activitynet.zip` |
+| TVR 特征 | [Google Drive](https://drive.google.com/file/d/1RVG3qIy-nf9XdalMw8wpmWNSPcnOAaNK/view) | `tvr.zip` |
+| Charades-STA 权重 | [Google Drive](https://drive.google.com/file/d/1qLLNnPx1WiEhQhjBrm9af4YgyDqjPCNg/view) | `Holmes-cha-parallel.zip` |
+| ActivityNet Captions 权重 | [Google Drive](https://drive.google.com/file/d/1nNiGnyLLMMoeYeohp9JEcshVJyTWntLi/view) | `Holmes-act.zip` |
+| TVR 双查询权重 | [Google Drive](https://drive.google.com/file/d/1BeHOYvYhil59mmDXDSGqhsBVL54W68cr/view) | `Holmes-tvr-multi.zip` |
+| TVR 单查询权重 | [Google Drive](https://drive.google.com/file/d/1Zzw9l82enS2DHjMaS7ow_CaOhq5Ht1Fm/view) | `Holmes-tvr.zip` |
+
+### 3. 运行评测
+
+```bash
+python -u reproduction/scripts/run_ready.py
+```
+
+脚本校验并转换特征、解包权重、执行四组评测，然后更新 `reproduction/RESULTS.md` 和 `reproduction/comparison.csv`。单项重跑命令见 [复现说明](reproduction/README.md)。数据与权重由作者托管。[官方数据目录](https://drive.google.com/drive/folders/11dRUeXmsWU25VMVmeuHc9nffzmZhPJEj) · [官方权重与指标](https://github.com/lijun2005/ICML26-Holmes#32-retrieval-performance)
 
 ```text
 pre/
@@ -39,14 +66,11 @@ pre/
     ├── RESULTS.md               完整评测报告
     ├── comparison.csv           数值对照
     ├── environment.freeze.txt   Linux 依赖版本
-    ├── scripts/                 复现与 GitHub 快照恢复脚本
-    ├── checkpoints/             4 份正式模型权重
-    ├── data/                    3 套解压、转换后的数据
-    ├── downloads/               7 个完整原始压缩包
-    ├── results/                 实测指标、校验清单与运行日志
-    
+    ├── scripts/                 复现脚本
+    ├── checkpoints/             解包后的权重，由脚本生成
+    ├── data/                    转换后的数据，由脚本生成
+    ├── downloads/               用户下载的官方 ZIP
+    └── results/                 实测指标、校验清单与运行日志
 ```
-
-正式运行仍从本目录启动，原有重跑命令保持有效。数据、正式权重、完整下载包和作者仓库均保留原路径。完整压缩包供 `run_ready.py` 和数据准备流程使用，因此予以保留。
 
 

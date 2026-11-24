@@ -24,9 +24,14 @@ fcntl.flock(preparation_lock, fcntl.LOCK_EX)
 manifest_path = root / 'results' / (args.dataset + '-data-manifest.json')
 if manifest_path.exists():
     existing = json.loads(manifest_path.read_text())
+    extracted = existing.get('files', {})
+    converted_files = [destination / Path(name).with_suffix('.hdf5')
+                       for name in extracted if Path(name).name == 'feature.bin']
     if (existing.get('archive') == str(args.archive)
             and existing.get('archive_crc_verified')
-            and existing.get('conversion', {}).get('all_values_and_frame_order_verified')):
+            and existing.get('conversion', {}).get('all_values_and_frame_order_verified')
+            and converted_files and all(path.is_file() for path in converted_files)
+            and all((destination / name).is_file() for name in extracted)):
         print('ALREADY_PREPARED', args.dataset, flush=True)
         raise SystemExit(0)
 manifest = {'archive': str(args.archive), 'files': {}, 'splits': {}}

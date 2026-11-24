@@ -1,5 +1,4 @@
 """Run each complete official archive through preparation and author evaluation."""
-import json
 import subprocess
 import sys
 import time
@@ -22,6 +21,7 @@ def run(command, log):
     if result.returncode:
         raise RuntimeError(f'Exit {result.returncode}: {log}')
 
+prepared = set()
 for dataset, code, archive_name, archive_size, weight_name, multi in jobs:
     label = code + ('-multi' if multi else '')
     data = root / 'downloads' / archive_name
@@ -29,10 +29,10 @@ for dataset, code, archive_name, archive_size, weight_name, multi in jobs:
     while not (data.exists() and data.stat().st_size == archive_size and zipfile.is_zipfile(data)
                and weights.exists() and zipfile.is_zipfile(weights)):
         time.sleep(30)
-    manifest = root / 'results' / (dataset + '-data-manifest.json')
-    if not manifest.exists():
+    if dataset not in prepared:
         run([str(python), str(root / 'scripts' / 'prepare_data.py'), str(data), dataset],
             root / 'results' / (dataset + '-preparation.log'))
+        prepared.add(dataset)
     with zipfile.ZipFile(weights) as archive:
         checkpoints = [entry for entry in archive.infolist() if entry.filename.endswith('.ckpt')]
         assert len(checkpoints) == 1, [entry.filename for entry in checkpoints]

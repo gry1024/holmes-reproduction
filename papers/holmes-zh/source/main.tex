@@ -1,0 +1,74 @@
+\documentclass{article}
+\usepackage[UTF8,scheme=plain,fontset=fandol]{ctex}
+\input{preamble}
+\input{command}
+
+\usepackage[accepted]{icml2026}
+\setmainfont{Latin Modern Roman}
+\setsansfont{Latin Modern Sans}
+\setmonofont{Latin Modern Mono}
+\setCJKmainfont{FandolSong-Regular.otf}[
+  BoldFont=FandolSong-Bold.otf,ItalicFont=FandolKai-Regular.otf,
+  BoldItalicFont=FandolKai-Regular.otf]
+\patchcmd{\abstract}{Abstract}{摘要}{}{}
+\renewcommand{\refname}{参考文献}
+
+\icmltitlerunning{Holmes}
+
+\begin{document}
+
+\twocolumn[
+\icmltitle{重新审视不确定性：部分相关视频检索中的证据学习}
+
+
+
+\begin{icmlauthorlist}
+\icmlauthor{Jun Li}{thusz,pcl}
+\icmlauthor{Peifeng Lai}{hitsz}
+\icmlauthor{Xuhang Lou}{hitsz}
+\icmlauthor{Jinpeng Wang}{hitsz}
+\icmlauthor{Yuting Wang}{}\\
+\icmlauthor{Ke Chen}{pcl}
+\icmlauthor{Yaowei Wang}{hitsz,pcl}
+\icmlauthor{Shu-tao Xia}{thusz,pcl}
+\end{icmlauthorlist}
+
+\icmlaffiliation{thusz}{Tsinghua Shenzhen International Graduate School, Tsinghua University, Shenzhen, China}
+\icmlaffiliation{hitsz}{Harbin Institute of Technology, Shenzhen, China}
+\icmlaffiliation{pcl}{Peng Cheng Laboratory, Shenzhen, China}
+
+
+\icmlcorrespondingauthor{Jinpeng Wang}{wangjp26@gmail.com}
+
+% the "keywords" metadata in the PDF but will not be shown in the document
+\icmlkeywords{机器学习, ICML}
+
+\vskip 0.3in
+]
+
+\printAffiliationsAndNotice{}  % leave blank if no need to mention equal contribution
+% \printAffiliationsAndNotice{\icmlEqualContribution} % otherwise use the standard text.
+
+\input{sections/Abstract}
+\input{sections/Introduction}
+\input{sections/RelatedWorks}
+\input{sections/Method}
+\input{sections/Experiments}
+\input{sections/Conclusions}
+\input{sections/ImpactStatement}
+
+\section*{译者致谢}
+感谢原作者公开论文、代码与复现实验资源。本中文译版以
+\href{https://arxiv.org/abs/2605.06083v1}{arXiv:2605.06083v1} 为底本，
+使用 Leey21 的 \href{https://github.com/Leey21/arxiv-translator}{arxiv-translator}
+工作流制作。译文为非官方版本，按
+\href{https://creativecommons.org/licenses/by/4.0/}{CC BY 4.0} 发布。
+
+\bibliography{main}
+\bibliographystyle{icml2026}
+
+\input{appendix_sections/Experiments}
+\input{appendix_sections/Method}
+
+
+\end{document}

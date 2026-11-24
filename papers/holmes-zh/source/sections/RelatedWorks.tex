@@ -1,0 +1,11 @@
+\section{相关工作}
+\label{sec:related_works}
+\noindent \textbf{部分相关视频检索} \quad
+传统的文本到视频检索（T2VR）方法\cite{Video-ColBERT,PIG,BLiM}检索与查询完全相关、预先裁剪的视频。由 MS-SL\cite{ms-sl} 首次提出的部分相关视频检索（PRVR）\cite{dreamprvr,sdm-prvr,bgmnet,amdnet,PEAN}则面向未经裁剪的视频，其中只有部分片段与查询匹配。视频语料库时刻检索（VCMR）\cite{zhang2025video,jsg}是另一项受到广泛研究的检索任务，旨在从大型视频语料库中定位特定时刻。PRVR 与 VCMR 的第一阶段类似，二者均进行粗粒度的视频级检索。但 VCMR 需要时刻级标注，因此更难扩展。
+
+既有 PRVR 方法主要关注片段建模，很少考虑语义歧义。MS-SL\cite{ms-sl,MS-SL++} 通过滑动窗口构建带有冗余的片段嵌入，而 ProtoPRVR\cite{ProtoPRVR} 通过生成少量原型加速检索。GMMFormer\cite{GMMFORMER,GMMFormerV2} 使用高斯注意力隐式建模片段。
+RAL\cite{RAL} 利用概率嵌入，MSC-PRVR\cite{msc-prvr} 则通过辅助训练损失缓解语义坍缩，两者均对查询歧义进行隐式建模；ARL\cite{ARL} 显式识别有歧义的查询与视频配对。然而，这些方法未能细分查询类别，也忽视了多实例学习导致的监督稀疏，限制了检索性能。我们提出 \modelname{}，以视频间证据学习识别查询差异，并以视频内证据学习构建查询与片段之间的软关联，提供更密集的监督信号。
+
+\noindent \textbf{不确定性学习} \quad
+尽管深度神经网络应用广泛，其预测大多是确定性的，缺少显式量化不确定性的机制。早期研究主要依赖贝叶斯神经网络（BNN）\cite{BNN} 和蒙特卡洛 Dropout\cite{montedropout2}。近年来，证据深度学习（EDL）\cite{edl-2018}受到越来越多关注。它以 Dempster-Shafer 理论（DST）\cite{dst} 和主观逻辑（SL）\cite{sl} 为基础，利用二阶概率分布显式建模不确定性，并已成功应用于多视图分类\cite{tmc,rcml}、噪声对应下的多模态检索\cite{rule,tcl,decl,ugncl,ucpm}、时序动作定位\cite{chenlo1,chenlo2}、开放集动作识别\cite{osa1,osa2}和零样本学习\cite{crest}等任务。后续研究\cite{fisher-edl,r-edl,flex-edl}进一步提高了 EDL 估计不确定性的能力。
+受这些进展启发，我们设计了分层证据学习框架，汇聚不同粒度的跨模态证据，共同量化 PRVR 中的检索不确定性。

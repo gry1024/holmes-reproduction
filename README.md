@@ -5,6 +5,7 @@
 | 内容 | 入口 |
 |---|---|
 | 原始论文 | [Holmes_paper.pdf](Holmes_paper.pdf) |
+| 中文译版 | [PDF、LaTeX 源码与致谢](papers/holmes-zh/README.md) |
 | 中文精读笔记 | [Holmes论文精读笔记.pdf](notes/Holmes论文精读笔记.pdf) |
 | 论文来源 | [作者仓库](https://github.com/lijun2005/ICML26-Holmes) · [原始链接记录](papers/source.txt) |
 | 复现结果与论文对照 | [RESULTS.md](reproduction/RESULTS.md) |
@@ -55,7 +56,8 @@ pre/
 ├── README.md                    总导航
 ├── Holmes_paper.pdf             原始论文
 ├── papers/
-│   └── source.txt               作者仓库原始链接
+│   ├── source.txt               作者仓库原始链接
+│   └── holmes-zh/               中文译版及 LaTeX 源码
 ├── notes/
 │   ├── Holmes论文精读笔记.pdf    阅读版
 │   ├── README.md                笔记编译说明

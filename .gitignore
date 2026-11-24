@@ -3,6 +3,7 @@
 /reproduction/downloads/
 /reproduction/archive/待清理/
 /reproduction/.github-transfer/
+/.tmp_arxiv/
 /reproduction/results/*-preparation.lock
 /.venv/
 __pycache__/

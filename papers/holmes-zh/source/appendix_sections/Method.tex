@@ -1,0 +1,164 @@
+\section{More Details on Method}
+\subsection{Basic Training Objectives}
+ Following  existing works\cite{ms-sl,GMMFORMER}, we adopt triplet loss \cite{dong2021dual, faghri2017vse++} $L^{trip}$ and InfoNCE loss \cite{miech2020end, zhang2021video} $L^{nce}$, query diverse loss \cite{GMMFORMER} $L_{div}$ that are widely used in PRVR. A text-video pair is considered positive if the video contains a moment relevant to the text; otherwise, it is regarded as negative.
+ Given a positive text-video pair $({T}, {V})$, the triplet ranking loss over the mini-batch $\mathcal{B}$ is formulated as:
+\begin{gather}
+L^{trip} = \frac{1}{n} \sum_{({T},{V}) \in {B}} \{\text{max}(0, m + s({T}^-, {V}) - s({T}, {V})) \nonumber 
+    + \text{max}(0, m + s({T}, {V}^-) - s({T},{V}))\},
+\end{gather}
+where $m$ is a margin constant. ${T}^-$ and ${V}^-$ indicate a negative text for ${V}$ and a negative video for ${T}$, respectively. The similarity score $s(,)$ is obtained by \cref{eq:simscore} and \cref{eq:sim}.
+
+ The infoNCE loss  is computed as:
+\begin{gather}
+L^{nce} = -\frac{1}{n} \sum_{({T},{V}) \in \mathcal{B}} \left\{\text{log}\left(\frac{s({T},{V})}{s({T},{V}) + \sum\nolimits_{{T}_i^{-} \in \mathcal{N}_{T} }s({T}_i^-, {V})}\right) \nonumber
++ \text{log}\left(\frac{s({T},{V})}{s({T},{V}) + \sum\nolimits_{{V}_i^{-} \in \mathcal{N}_{V} }s({T}, {V}_i^-)}\right) \right\},
+\end{gather}
+where $ \mathcal{N}_{T} $ and $ \mathcal{N}_{V} $ represent the negative texts and videos of $ {V} $ and $ {T} $ within the mini-batch $ \mathcal{B} $, respectively.
+
+Finally , $L_{sim}$ is defined as:
+\begin{equation}
+L_{sim} = L_{c}^{trip} + L_{f}^{trip} + \lambda_c L_{c}^{nce} + \lambda_f L_{f}^{nce},
+\end{equation}
+where  $f$ and $c$ mark the objectives for the frame-level branch and the  clip-level branch, respectively.
+ $\lambda_c$ and $\lambda_f$ are hyper-parameters to balance the contributions of InfoNCE objectives.
+
+
+Given a collection of text queries $T$ in the mini-batch $\mathcal{B}$, the query diverse loss is defined as:
+\vspace{-.5em}
+\begin{equation}
+L_{div} = \frac{1}{n} \sum_{\boldsymbol q_i,\boldsymbol q_j \in {T}} \mathds{1}_{\boldsymbol q_i, \boldsymbol q_j} \log\left(1 + e^{\alpha (cos(\boldsymbol q_i, \boldsymbol q_j) + \delta)}\right),
+\vspace{-.5em}
+\end{equation}
+where $ \delta > 0 $ denotes the margin, $ \alpha > 0 $ is a scaling factor, and $ \mathds{1}_{\boldsymbol q_i, \boldsymbol q_j} \in \{0,1\} $ represents an indicator function,  $ \mathds{1}_{\boldsymbol q_i, \boldsymbol q_j} = 1 $ when  $ \boldsymbol q_i $ and $ \boldsymbol q_j $ correspond to the same video.
+\subsection{Detailed proofs for \cref{theorem: wrong uncertainty}}
+\label{appendix:theorem3.2}
+
+\begin{proof}
+We prove the theorem by providing a counter-example.
+Let $y_i$ be the ground-truth label corresponding to index $t$ (i.e., $y_{it}=1$).
+Let $\boldsymbol{e}_i$ be an evidence vector constructed such that all evidence is assigned to an incorrect video $k$ ($k \neq t$):
+\begin{equation}
+    e_{ij} = 
+    \begin{cases}
+    \lambda, & \text{if } j = k, \\
+    0, & \text{otherwise},
+    \end{cases}
+\end{equation}
+where $\lambda \gg 0$ is a large positive constant.
+According to Eq. (\ref{eq:dir-alpha}) and Eq. (\ref{eq:dir-alpha2}), the Dirichlet strength is $S_i = \lambda + K$.
+Consequently, the epistemic uncertainty is $\displaystyle u_i = \frac{K}{\lambda + K}$. By choosing a sufficiently large $\lambda$, we can make $u_i$ arbitrarily close to 0 (low uncertainty).
+
+However, the belief mass $b_{ij}$ is maximized at index $k$ because $\alpha_{ik} > \alpha_{ij}$ for all $j \neq k$.
+Since $k \neq t$, the highest belief is not assigned to the annotated label.
+This implies that a low epistemic uncertainty indicates that the model has collected a large amount of evidence, but it does not guarantee that this evidence points to the correct video.
+\end{proof}
+
+\subsection{The derivation of aleatoric uncertainty in \cref{eq:aleatoric-uncertainty}}
+\label{appendix:aleatoric-uncertainty}
+Following standard formulations in evidential learning \citep{rule, r-edl}, let $\mathbf{p} = [p_1, \dots, p_K]^\top$ be the probability vector for the $i$-th sample, defined on the $K$-dimensional unit simplex $\mathcal{S}^K$. We assume $\mathbf{p}$ follows a Dirichlet distribution parameterized by the concentration vector $\boldsymbol{\alpha}_i = [\alpha_{i1}, \dots, \alpha_{iK}]^\top$. The probability density function (PDF) is defined as:
+\begin{equation}
+    \text{Dir}(\mathbf{p}; \boldsymbol{\alpha}_i) = 
+    \begin{cases} 
+        \displaystyle\frac{1}{B(\boldsymbol{\alpha}_i)} \prod_{k=1}^{K} p_k^{\alpha_{ik}-1}, & \text{for } \mathbf{p} \in \mathcal{S}^K, \\
+        0, & \text{otherwise},
+    \end{cases}
+    \label{eq:dirichlet_pdf}
+\end{equation}
+where $B(\boldsymbol{\alpha}_i) = \frac{\prod_{k=1}^K \Gamma(\alpha_{ik})}{\Gamma(S_i)}$ is the multivariate beta function, and $S_i = \sum_{k=1}^K \alpha_{ik}$ is the strength of the distribution. The expected entropy (aleatoric uncertainty) of the random variable $\mathbf{p}$ under this distribution is derived as follows:
+\begin{equation}
+\begin{split}
+\mathbb{E}_{\mathbf{p} \sim \text{Dir}(\boldsymbol{\alpha}_i)} [H(\mathbf{p})] 
+    &= \int_{\mathcal{S}^K} \text{Dir}(\mathbf{p}; \boldsymbol{\alpha}_i) \left( - \sum_{k=1}^{K} p_k \ln p_k \right) d\mathbf{p} \nonumber \\
+    &= - \sum_{k=1}^{K} \int_{\mathcal{S}^K} \text{Dir}(\mathbf{p}; \boldsymbol{\alpha}_i) (p_k \ln p_k) d\mathbf{p} \nonumber \\
+    &= - \sum_{k=1}^{K} \int_{\mathcal{S}^K} \frac{\Gamma(S_i)}{\prod_{j=1}^{K} \Gamma(\alpha_{ij})} \prod_{j=1}^{K} p_j^{\alpha_{ij}-1} (p_k \ln p_k) d\mathbf{p} \nonumber \\
+    &= - \sum_{k=1}^{K} \int_{\mathcal{S}^K} \frac{\alpha_{ik}}{S_i} \frac{\Gamma(S_i + 1)}{\Gamma(\alpha_{ik} + 1) \prod_{j \neq k} \Gamma(\alpha_{ij})} p_k^{\alpha_{ik}} \prod_{j \neq k} p_j^{\alpha_{ij}-1} \ln p_k d\mathbf{p} \nonumber \\
+    &= - \sum_{k=1}^{K} \frac{\alpha_{ik}}{S_i} \int_{\mathcal{S}^K} \text{Dir}(\mathbf{p}; \boldsymbol{\alpha}_i + \mathbf{1}_k) \ln p_k d\mathbf{p} \nonumber \\
+    &= - \sum_{k=1}^{K} \frac{\alpha_{ik}}{S_i} \mathbb{E}_{\mathbf{p} \sim \text{Dir}(\boldsymbol{\alpha}_i + \mathbf{1}_k)} [\ln p_k] \nonumber \\
+    &= - \sum_{k=1}^{K} \frac{\alpha_{ik}}{S_i} (\psi(\alpha_{ik} + 1) - \psi(S_i + 1)) \nonumber \\
+    &= \sum_{k=1}^{K} \frac{\alpha_{ik}}{S_i} (\psi(S_i + 1) - \psi(\alpha_{ik} + 1)),
+\end{split}
+\end{equation}
+where the term $\mathbf{1}_k$ represents a one-hot vector with the $k$-th element set to 1 and all others set to 0. The derivation primarily relies on the recursive property of the Gamma function, $\Gamma(z+1) = z\Gamma(z)$. This property allows us to rewrite the probability density function by extracting the factor $\displaystyle\frac{\alpha_{ik}}{S_i}$, thereby transforming the original integral into an expectation over a new Dirichlet distribution with parameters shifted by $\mathbf{1}_k$ (i.e., $\boldsymbol{\alpha}_i + \mathbf{1}_k$).
+\subsection{The derivation of loss function in \cref{eq:evi-loss}}
+\label{appendix:equation17}
+In this section, we provide the detailed derivation of the evidential learning objective presented in the main paper. 
+
+Our method aims to guide the predicted probability $\boldsymbol{p}_i$ to align with the calibrated label $\hat{\boldsymbol{y}}_i$. Since $\boldsymbol{p}_i$ is a random variable, we formulate the uncertainty-aware learning objective as the expected sum of squared errors between $\hat{\boldsymbol{y}}_i$ and $\boldsymbol{p}_i$. The derivation is as follows:
+\begin{equation}
+\setlength{\abovedisplayskip}{2pt}
+\setlength{\belowdisplayskip}{2pt}
+    \begin{split}
+        {L}_U(\boldsymbol{\alpha}_i, \hat{\boldsymbol{y}}_i)
+        &=\int\left\|\hat{\boldsymbol y}_i-\boldsymbol{p}_i\right\|_2^2 \frac{1}{B\left(\boldsymbol{\alpha}_i\right)} \prod_{j=1}^{K} p_{i j}^{\alpha_{i j}-1} d \boldsymbol{p}_i \\
+        &= \int \|\hat{\boldsymbol{y}}_i - \boldsymbol{p}_i\|_2^2 \, \text{Dir}(\boldsymbol{p}_i; \boldsymbol{\alpha}_i) \, d\boldsymbol{p}_i \\
+        &= \sum_{j=1}^K \mathbb{E}_{\boldsymbol{p}_i \sim \text{Dir}(\boldsymbol{\alpha}_i)} \left[ (\hat{y}_{ij} - p_{ij})^2 \right] \\
+        &= \sum_{j=1}^K \left[ \left( \hat{y}_{ij} - \mathbb{E}[p_{ij}] \right)^2 + \text{Var}(p_{ij}) \right] \\
+        &= \sum_{j=1}^K \left( \hat{y}_{ij} - \frac{\alpha_{ij}}{S_i} \right)^2 + \frac{\alpha_{ij} (S_i - \alpha_{ij})}{S_i^2 (S_i + 1)},
+    \end{split}
+\end{equation}
+where $S_i = \sum_{j=1}^K \alpha_{ij}$. The third step utilizes the standard bias-variance decomposition, $\mathbb{E}[(X-c)^2] = (c-\mathbb{E}[X])^2 + \text{Var}(X)$, and the final step substitutes the mean and variance of the Dirichlet distribution: $\mathbb{E}[p_{ij}] = \alpha_{ij}/S_i$ and $\text{Var}(p_{ij}) = \alpha_{ij}(S_i-\alpha_{ij}) / [S_i^2(S_i+1)]$.
+\subsection{Derivation of the Sinkhorn Algorithm}
+\label{sec:sinkhorn_derivation}
+In this section, we provide a detailed derivation of the Sinkhorn algorithm used for calculating the optimal transport (\cref{eq:ot}). 
+Consider a similarity matrix $\mathbf{S} \in \mathbb{R}^{n \times m}$, where $[\mathbf{S}]_{i,j}$ represents the similarity score between a video clip $\mathbf{c}_i$ and a query $\mathbf{q}_j$. The goal of optimal transport is to find a transport plan $\mathbf{Q}$ that maximizes the total similarity under marginal constraints. The primal problem is defined as:
+\begin{equation}
+\begin{aligned}
+    \max_{\mathbf{Q} \in \mathcal{Q}} \quad & \langle \mathbf{Q}, \mathbf{S} \rangle = \text{tr}(\mathbf{Q}^\top \mathbf{S}) = \sum_{i=1}^{n} \sum_{j=1}^{m} [\mathbf{Q}]_{i,j} \cdot [\mathbf{S}]_{i,j} \\
+    \text{s.t.} \quad & \mathcal{Q} = \left\{ \mathbf{Q} \in \mathbb{R}_+^{n \times m} \mid \mathbf{Q}\mathbf{1}_m = \boldsymbol{\mu}, \, \mathbf{Q}^\top \mathbf{1}_n = \boldsymbol{\nu} \right\},
+\end{aligned}
+\label{eq:ot_primal}
+\end{equation}
+where $\boldsymbol{\mu} \in \mathbb{R}^n$ and $\boldsymbol{\nu} \in \mathbb{R}^m$ are probability vectors representing the mass distribution of video clips and queries, respectively. For uniform distributions, we set $\boldsymbol{\mu} = \frac{1}{n}\mathbf{1}_n$ and $\boldsymbol{\nu} = \frac{1}{m}\mathbf{1}_m$.
+
+Standard linear programming solvers for Eq.~\eqref{eq:ot_primal} typically require $O(n^3 \log n)$ time complexity, which is computationally prohibitive for large-scale datasets. To address this, Cuturi \citep{sinkhorn} proposed an entropy-regularized formulation that admits a fast approximate solution:
+\begin{equation}
+    \max_{\mathbf{Q} \in \mathcal{Q}} \quad \langle \mathbf{Q}, \mathbf{S} \rangle + \varepsilon H(\mathbf{Q}),
+    \label{eq:ot_regularized}
+\end{equation}
+where $H(\mathbf{Q}) = - \sum_{i,j} [\mathbf{Q}]_{i,j} \ln([\mathbf{Q}]_{i,j})$ is the entropy regularization term and $\varepsilon > 0$ is the regularization coefficient. This convex objective function allows us to utilize the Lagrange multiplier method. The Lagrangian $\mathcal{L}(\mathbf{Q}, \boldsymbol{u}, \boldsymbol{v})$ with dual multipliers $\boldsymbol{u} \in \mathbb{R}^n$ and $\boldsymbol{v} \in \mathbb{R}^m$ is given by:
+\begin{equation}
+    \mathcal{L}(\mathbf{Q}, \boldsymbol{u}, \boldsymbol{v}) = \langle \mathbf{Q}, \mathbf{S} \rangle + \varepsilon H(\mathbf{Q}) + \boldsymbol{u}^\top (\mathbf{Q}\mathbf{1}_m - \boldsymbol{\mu}) + \boldsymbol{v}^\top (\mathbf{Q}^\top \mathbf{1}_n - \boldsymbol{\nu}).
+    \label{eq:lagrangian}
+\end{equation}
+Taking the partial derivative of Eq.~\eqref{eq:lagrangian} with respect to each entry $[\mathbf{Q}]_{i,j}$ and setting it to zero (KKT condition):
+\begin{equation}
+    \frac{\partial \mathcal{L}}{\partial [\mathbf{Q}]_{i,j}} = [\mathbf{S}]_{i,j} - \varepsilon (\ln([\mathbf{Q}]_{i,j}) + 1) + u_i + v_j = 0.
+\end{equation}
+Solving for $[\mathbf{Q}]_{i,j}$, we obtain:
+\begin{equation}
+    [\mathbf{Q}]_{i,j} = \exp\left( \frac{[\mathbf{S}]_{i,j} + u_i + v_j}{\varepsilon} - 1 \right) = e^{-\frac{1}{2} + \frac{u_i}{\varepsilon}} \cdot e^{\frac{[\mathbf{S}]_{i,j}}{\varepsilon}} \cdot e^{-\frac{1}{2} + \frac{v_j}{\varepsilon}}.
+\end{equation}
+This factorization suggests that the optimal solution $\mathbf{Q}^*$ can be expressed in terms of two scaling vectors, $\boldsymbol{\kappa}_1 \in \mathbb{R}^n$ and $\boldsymbol{\kappa}_2 \in \mathbb{R}^m$. By defining $\displaystyle[\boldsymbol{\kappa}_1]_i = \exp\left(-{1}/{2} + {u_i}/{\varepsilon}\right)$ and $\displaystyle[\boldsymbol{\kappa}_2]_j = \exp\left(-{1}/{2} + {v_j}/{\varepsilon}\right)$, the optimal transport matrix takes the form of a normalized exponential matrix:
+\begin{equation}
+    \mathbf{Q}^* = \text{Diag}(\boldsymbol{\kappa}_1) \exp(\mathbf{S}/\varepsilon) \text{Diag}(\boldsymbol{\kappa}_2).
+    \label{eq:optimal_Q}
+\end{equation}
+Since $\mathbf{Q}^*$ must satisfy the marginal constraints in Eq.~\eqref{eq:ot_primal}, we have:
+\begin{equation}
+    \mathbf{Q}^*\mathbf{1}_m = \boldsymbol{\mu} \quad \text{and} \quad \mathbf{Q}^{*\top}\mathbf{1}_n = \boldsymbol{\nu}.
+\end{equation}
+Substituting Eq.~\eqref{eq:optimal_Q} into these constraints leads to the Sinkhorn-Knopp fixed-point iteration updates:
+\begin{equation}
+    \boldsymbol{\kappa}_1 \leftarrow \boldsymbol{\mu} \oslash (\exp(\mathbf{S}/\varepsilon) \boldsymbol{\kappa}_2), \quad 
+    \boldsymbol{\kappa}_2 \leftarrow \boldsymbol{\nu} \oslash (\exp(\mathbf{S}^\top/\varepsilon) \boldsymbol{\kappa}_1),
+\end{equation}
+where $\oslash$ denotes element-wise division. Empirically, a few iterations (e.g., 50 steps) are sufficient to converge to a satisfactory transport plan $\mathbf{Q}^*$. The final optimal transport distance is then computed as $\langle \mathbf{Q}^*, \mathbf{S} \rangle$.
+\subsection{Further details of Our Architecture}
+We replace the standard self-attention in the Transformer block with Gaussian attention \cite{GMMFORMER}, yielding a Gaussian block.
+Multiple Gaussian blocks ($N_g$) operate in parallel, and their outputs are aggregated via MAIM \cite{HLFormer} to construct the frame-/clip-level encoder.
+For notational convenience, we unify the frame and clip embeddings as $\bmV_o$, since they are processed in an identical manner.
+Given $\bmV_o$, the Gaussian attention is defined as:
+\vspace{-.6em}
+\begin{equation}\label{eq:euclidean-attention}
+  \!\! \!\! \text{GA}({\bmV_o})\! =\!\text{softmax}\!\left(\!\mathcal{M}_{\sigma}^{g} \odot \frac{ {\bmV_o} W^q ( {\bmV_o} W^k)^{\top}}{\sqrt{d_h}}\!\right)\!{\bmV_o} W^v,
+\vspace{-.6em}
+\end{equation}
+where $\displaystyle\mathcal{M}_{\sigma}^{g}(i, j) = \frac{1}{2\pi} e^{-\frac{(j-i)^2}{\sigma^2}}$ is a Gaussian kernel with variance $\sigma^2$. Varying $\sigma$ enables modeling feature interactions at different temporal scales, yielding multi-receptive-field representations. $W^q$, $W^k$ and $W^v$ denote linear projections. $d_h$ is the attention dimension and $\odot$ indicates element-wise multiplication.
+\subsection{Further discussion  of related work}
+Existing evidential learning methods have been applied to noisy cross‑modal retrieval and text‑to‑video retrieval, In noisy settings, prior works\cite{decl,ucpm} leverage epistemic uncertainty derived from Dirichlet parameters to identify instance-level noisy pairs (i.e., clean vs. noisy). In text-video retrieval, ~\cite{duq} integrates probabilistic embeddings with epistemic uncertainty only as a regularization signal. They do not explicitly model query-level semantic heterogeneity and also fail to address the unique challenges of PRVR.
+
+Holmes introduces a hierarchical evidential framework specifically designed for PRVR:
+\begin{itemize}
+    \item Inter-video: PRVR queries exhibit fine-grained heterogeneity beyond a simple clean/noisy dichotomy. We propose a three-fold principle that goes beyond epistemic uncertainty by incorporating label consistency and aleatoric uncertainty for query diagnosis, enabling cross-scale conflict-aware fusion and query-adaptive label calibration.
+    \item  Intra-video: PRVR relies on MIL to handle partial relevance, which induces sparse supervision. We employ FOT to provide denser supervision, generating reliable intra‑video evidence to support inter‑video learning.
+\end{itemize}

@@ -1,0 +1,234 @@
+{
+  "commit": "73bbbfcfca241418507a9a46691f0cb834e31d8b",
+  "all_author_python_sources_unchanged": true,
+  "files": [
+    {
+      "file": "multisrc/Configs/builder.py",
+      "matches_commit_ignoring_crlf": true,
+      "local_sha256": "cf39d65f9a8ae29fec969a31572ea88759dc98672988413c946ca0187c481fb8",
+      "commit_sha256": "c23ab63525c0f4e1eef533daf6b81a63110212d9d08e39a26182fb8e8cee2341"
+    },
+    {
+      "file": "multisrc/Configs/tvr.py",
+      "matches_commit_ignoring_crlf": true,
+      "local_sha256": "ded0464d005bffe2fa583dcb9178900f132df904a0b1b7eb68b61e6b4971f05b",
+      "commit_sha256": "cf5de5780a07c6665253d7f07124872c1d73eba3f95f62f0afb3fe5e266340c6"
+    },
+    {
+      "file": "multisrc/Datasets/builder.py",
+      "matches_commit_ignoring_crlf": true,
+      "local_sha256": "79246d257233b86734112b93567bdc87cb7a0a9ffc72c43b9a8fa8e2588565c1",
+      "commit_sha256": "7ef5b3fa35939f5be67ca7e2117e831e455ad2444a285a46d80eefec204fa1e0"
+    },
+    {
+      "file": "multisrc/Datasets/data_provider.py",
+      "matches_commit_ignoring_crlf": true,
+      "local_sha256": "fb60962d3ef7276d3ae134c68c2459a427f4ae70566ee37a5d96159fa6f274a6",
+      "commit_sha256": "e79c1df9207712ff1d36fc0026e41576a0413152469230f4555520a7227bc339"
+    },
+    {
+      "file": "multisrc/Losses/builder.py",
+      "matches_commit_ignoring_crlf": true,
+      "local_sha256": "10a4b4d79b2713be25ce261d30e8fc0a78592c9edbb403a63542aaf3affbb108",
+      "commit_sha256": "16c5da91a0a3da3c8b277a56582c87f7a06c685b08aa0eca1b70eb31060e8e45"
+    },
+    {
+      "file": "multisrc/Losses/loss.py",
+      "matches_commit_ignoring_crlf": true,
+      "local_sha256": "c0685e8138a71332c9f1e47a36c2022c1ad5b98291c59e40714ecfb6368a089e",
+      "commit_sha256": "885b5b24f6633b626d83b35a6b0ea9db81475dc4bde0f85cc2aef74619fb5d31"
+    },
+    {
+      "file": "multisrc/Losses/partialot.py",
+      "matches_commit_ignoring_crlf": true,
+      "local_sha256": "4f2fe50860ad2e1a31e4961eb802c901c506c9720e66ac6aa4131d0a87049b60",
+      "commit_sha256": "c3740ef4c1f5063ec626bf0218f8df92d8920a34afc40cca9e04a612c7ce480c"
+    },
+    {
+      "file": "multisrc/Models/builder.py",
+      "matches_commit_ignoring_crlf": true,
+      "local_sha256": "3fad6f5708cd5d13b1a337d5c802e1ff022730a2e26a85fe7916ee98ac20c3c0",
+      "commit_sha256": "d58037f98e93696c0fc83a01ca8f259a4b3dd6cbb8400632ca9b54c0494e9828"
+    },
+    {
+      "file": "multisrc/Models/holmes/model.py",
+      "matches_commit_ignoring_crlf": true,
+      "local_sha256": "cb89f07d6bcdd066dc84395f21454806ac25062cb02155d0a20b9ab31a38372c",
+      "commit_sha256": "36ac99bc15cf07439f52f77d77ccf12218542cca0538114f4d3418530cf22c4a"
+    },
+    {
+      "file": "multisrc/Models/holmes/model_components.py",
+      "matches_commit_ignoring_crlf": true,
+      "local_sha256": "af5eceac08cb0cd8c033d26074e3677d090f824191ef3898a205f879a502a107",
+      "commit_sha256": "ba6b6bb150dbb16a70150fa8127c5b1100d59d90c8ad5688b4b761a150e00d73"
+    },
+    {
+      "file": "multisrc/Opts/builder.py",
+      "matches_commit_ignoring_crlf": true,
+      "local_sha256": "f050615c3212a3cb4f37bd0f21d7fdb0de73faa56e66f0d449fdd8a6957bf7bb",
+      "commit_sha256": "204ec299db38046412a40e78bbeff5f079c5055ea736d05c29954813ea841d64"
+    },
+    {
+      "file": "multisrc/Opts/optimization.py",
+      "matches_commit_ignoring_crlf": true,
+      "local_sha256": "2c25138c751a2fb1676c91e1fcd9c81c4afcbdc8e4c0c9f8621f3ea0294ea0be",
+      "commit_sha256": "204327749613535289f01af520c7ce0a983b716353fe97383e364c50c63f3103"
+    },
+    {
+      "file": "multisrc/Utils/basic_utils.py",
+      "matches_commit_ignoring_crlf": true,
+      "local_sha256": "b2a9e9473eb7c2ad80794b8abbc02dbfc40c704284e955ddf454e87f3c74d5cd",
+      "commit_sha256": "e8169ae5290b34f0057a43155258226b1adbb6e5e8ca81a8532d892ec99b3378"
+    },
+    {
+      "file": "multisrc/Utils/model_utils.py",
+      "matches_commit_ignoring_crlf": true,
+      "local_sha256": "56f2c31652cee1c9c122c844ad9854d41c2e39da83a87fede5d313fca1081542",
+      "commit_sha256": "dcbf0d753bef502c298dc81f8f56436ba3bb4249f3f8cb6496c04f46bede0cea"
+    },
+    {
+      "file": "multisrc/Utils/utils.py",
+      "matches_commit_ignoring_crlf": true,
+      "local_sha256": "ddf256857d068bdf4c73645242651ac6ed75e51ab5adaf8d2bd594567ccbc8e1",
+      "commit_sha256": "ed7d27d26683ed3872a28cbaa2c87b258da77ad57b2c6647f1f29687cefe2dcd"
+    },
+    {
+      "file": "multisrc/Validations/builder.py",
+      "matches_commit_ignoring_crlf": true,
+      "local_sha256": "c1c54db8ee392a8122a16ae03678882a79f9e2980efa979be16cd70299632d6e",
+      "commit_sha256": "5e1ce2b205f07ab48ff16e7108d3a6a78275b1c87b5974a4ae09627fed32a40e"
+    },
+    {
+      "file": "multisrc/Validations/validations.py",
+      "matches_commit_ignoring_crlf": true,
+      "local_sha256": "10bc67cb01ead2e5a1d7e7f1fa90f7ac100ec2ec618622fd69837bcf28efdb44",
+      "commit_sha256": "052bdb883ede4f75ea9ab1a2274dae5986e2f3c73c1f7698c57e1ef4cdc494a8"
+    },
+    {
+      "file": "multisrc/main.py",
+      "matches_commit_ignoring_crlf": true,
+      "local_sha256": "00abbffcf3fde97ead457f8366445df8be5089f2bac90e181344944a7b15b083",
+      "commit_sha256": "99ee891b49e7ebe3aec9b24b9f8133cf4ea10e9c4ba6dadc52e7d5b952ed1496"
+    },
+    {
+      "file": "src/Configs/act.py",
+      "matches_commit_ignoring_crlf": true,
+      "local_sha256": "612e772d32cb857c1a41b3cd5fcc3387b9e08554ba1543d1bf3c556f3dd1c306",
+      "commit_sha256": "eedb6c3ea7fa277c685a08fee8c3ef266957b0cd2023af43c2ccccf989302195"
+    },
+    {
+      "file": "src/Configs/builder.py",
+      "matches_commit_ignoring_crlf": true,
+      "local_sha256": "dd1dd3374bca2d91f9468ede0007345a15c491c66d73450080a4e74f8ea19c50",
+      "commit_sha256": "904c9fc0f44ff88463d75c3bc894a8dc54c9502218ce6b48fa6da41b114041bd"
+    },
+    {
+      "file": "src/Configs/cha.py",
+      "matches_commit_ignoring_crlf": true,
+      "local_sha256": "03ba8b4e8f22cc29f244840d110e0fa7054dbc65214a896f6890af530a33ddce",
+      "commit_sha256": "cd75581cd8d126def78b28375fcab72902deeed33e976848ff3729acc122ad7d"
+    },
+    {
+      "file": "src/Configs/tvr.py",
+      "matches_commit_ignoring_crlf": true,
+      "local_sha256": "edfdea4109bd250d1f94ab5915996073cbeb390fc195f15457c9c6fa227e5aa1",
+      "commit_sha256": "f93f3206ebe589c1017d5596beb7feffdcc586d505c2d65a00c6a3497555d7e0"
+    },
+    {
+      "file": "src/Datasets/builder.py",
+      "matches_commit_ignoring_crlf": true,
+      "local_sha256": "89cf0dac05a6a46df14d7fec625725be17fc1ac2d9235b1be9434381e814728c",
+      "commit_sha256": "23d35553cd375e3d0202c059b1b0dcbebf91bb7c6d0d089d9b15b8e78e05776c"
+    },
+    {
+      "file": "src/Datasets/data_provider.py",
+      "matches_commit_ignoring_crlf": true,
+      "local_sha256": "0d83b88409fecfe88b244a188109b9c128e8fa5d2f6bf95d07b73d3fb414d868",
+      "commit_sha256": "5ec007db0c030ad5bb4722a13e20c870ce68eaaaca6b11db8675a3c76484a58d"
+    },
+    {
+      "file": "src/Losses/builder.py",
+      "matches_commit_ignoring_crlf": true,
+      "local_sha256": "10a4b4d79b2713be25ce261d30e8fc0a78592c9edbb403a63542aaf3affbb108",
+      "commit_sha256": "16c5da91a0a3da3c8b277a56582c87f7a06c685b08aa0eca1b70eb31060e8e45"
+    },
+    {
+      "file": "src/Losses/loss.py",
+      "matches_commit_ignoring_crlf": true,
+      "local_sha256": "186d091ea2da0782e339b18c3bed18424fdc4a4874bbd6af0e3a3f9e6cb9487d",
+      "commit_sha256": "cc7acd81b170630481628a9d8a54dca0d6bb9cf6955bfd0f882064d1af010250"
+    },
+    {
+      "file": "src/Losses/partialot.py",
+      "matches_commit_ignoring_crlf": true,
+      "local_sha256": "33f74635335eb0edfe0f40d5a1fd20563fb2838fe3e382f0112b1f181ac5627b",
+      "commit_sha256": "874e1905bac20a03ec70b4e7903f6c3c36bb30f271167fa7158e5f23346efa23"
+    },
+    {
+      "file": "src/Models/builder.py",
+      "matches_commit_ignoring_crlf": true,
+      "local_sha256": "3fad6f5708cd5d13b1a337d5c802e1ff022730a2e26a85fe7916ee98ac20c3c0",
+      "commit_sha256": "d58037f98e93696c0fc83a01ca8f259a4b3dd6cbb8400632ca9b54c0494e9828"
+    },
+    {
+      "file": "src/Models/holmes/model.py",
+      "matches_commit_ignoring_crlf": true,
+      "local_sha256": "e6354bd2d42edf19b21d542facf1d00fdf644165aa7c72a284aabb64d94780c0",
+      "commit_sha256": "cf14098d08d0ca59531fcd6600e9e2c8bd4379bd13292b293776577e15fff915"
+    },
+    {
+      "file": "src/Models/holmes/model_components.py",
+      "matches_commit_ignoring_crlf": true,
+      "local_sha256": "af5eceac08cb0cd8c033d26074e3677d090f824191ef3898a205f879a502a107",
+      "commit_sha256": "ba6b6bb150dbb16a70150fa8127c5b1100d59d90c8ad5688b4b761a150e00d73"
+    },
+    {
+      "file": "src/Opts/builder.py",
+      "matches_commit_ignoring_crlf": true,
+      "local_sha256": "f050615c3212a3cb4f37bd0f21d7fdb0de73faa56e66f0d449fdd8a6957bf7bb",
+      "commit_sha256": "204ec299db38046412a40e78bbeff5f079c5055ea736d05c29954813ea841d64"
+    },
+    {
+      "file": "src/Opts/optimization.py",
+      "matches_commit_ignoring_crlf": true,
+      "local_sha256": "2c25138c751a2fb1676c91e1fcd9c81c4afcbdc8e4c0c9f8621f3ea0294ea0be",
+      "commit_sha256": "204327749613535289f01af520c7ce0a983b716353fe97383e364c50c63f3103"
+    },
+    {
+      "file": "src/Utils/basic_utils.py",
+      "matches_commit_ignoring_crlf": true,
+      "local_sha256": "7d14dd594db35c5bef775d0c063aeda3dc830bfcf2b4c3fade2cb4006d61be9c",
+      "commit_sha256": "8d635b38879536026983f16d0c3bf1ffaf8a9fb24f7531f178dfcec4962601b1"
+    },
+    {
+      "file": "src/Utils/model_utils.py",
+      "matches_commit_ignoring_crlf": true,
+      "local_sha256": "56f2c31652cee1c9c122c844ad9854d41c2e39da83a87fede5d313fca1081542",
+      "commit_sha256": "dcbf0d753bef502c298dc81f8f56436ba3bb4249f3f8cb6496c04f46bede0cea"
+    },
+    {
+      "file": "src/Utils/utils.py",
+      "matches_commit_ignoring_crlf": true,
+      "local_sha256": "ddf256857d068bdf4c73645242651ac6ed75e51ab5adaf8d2bd594567ccbc8e1",
+      "commit_sha256": "ed7d27d26683ed3872a28cbaa2c87b258da77ad57b2c6647f1f29687cefe2dcd"
+    },
+    {
+      "file": "src/Validations/builder.py",
+      "matches_commit_ignoring_crlf": true,
+      "local_sha256": "c1c54db8ee392a8122a16ae03678882a79f9e2980efa979be16cd70299632d6e",
+      "commit_sha256": "5e1ce2b205f07ab48ff16e7108d3a6a78275b1c87b5974a4ae09627fed32a40e"
+    },
+    {
+      "file": "src/Validations/validations.py",
+      "matches_commit_ignoring_crlf": true,
+      "local_sha256": "74437256de83d916abbafa73c49d51393f1fcbd6ae70faf5d71d0312c674705b",
+      "commit_sha256": "1bc30edb8edcacfc9886f1dc3c1ccf8d273c4404eaf0012af97bf1134d14e67b"
+    },
+    {
+      "file": "src/main.py",
+      "matches_commit_ignoring_crlf": true,
+      "local_sha256": "def4a37b46b9d3fa7070f417e76d0a9161619b53663409ea2f8ec5adf7bbbb2a",
+      "commit_sha256": "9a7701d64d4dd58969652d05e9c7cb49646b6fda2b482b76caec3cdabc00a6c0"
+    }
+  ]
+}

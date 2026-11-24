@@ -1,0 +1,15 @@
+FeatureData/ 0 0
+FeatureData/i3d_resnet/ 0 0
+FeatureData/i3d_resnet/video2frames.txt 36638886 3009405
+FeatureData/i3d_resnet/shape.txt 12 12
+FeatureData/i3d_resnet/feature.bin 13643759616 12232608688
+FeatureData/i3d_resnet/id.txt 32622328 2810475
+FeatureData/new_clip_vit_32_tvr_vid_features.hdf5 4092153360 1288217503
+TextData/tvrtrain.caption.txt 8639892 2254078
+SPLIT TextData/tvrtrain.caption.txt 87174 17435
+TextData/tvrtest.caption.txt 1079407 282809
+SPLIT TextData/tvrtest.caption.txt 10895 2179
+TextData/roberta_tvr_query_feat.hdf5 4443336848 4107289908
+TextData/clip_ViT_B_32_tvr_query_feat.hdf5 444898077 150759076
+TextData/tvrval.caption.txt 1079407 279969
+SPLIT TextData/tvrval.caption.txt 10895 2179

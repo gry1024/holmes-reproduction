@@ -1,0 +1,17 @@
+charades/ 0 0
+charades/FeatureData/ 0 0
+charades/FeatureData/i3d_rgb_lgi/ 0 0
+charades/FeatureData/i3d_rgb_lgi/feature.bin 2497605632 2157511226
+charades/FeatureData/i3d_rgb_lgi/id.txt 5451917 1009621
+charades/FeatureData/i3d_rgb_lgi/new_clip_vit_32_charades_vid_features.hdf5 626825472 579674746
+charades/FeatureData/i3d_rgb_lgi/shape.txt 11 13
+charades/FeatureData/i3d_rgb_lgi/video2frames.txt 7354611 1124767
+charades/TextData/ 0 0
+charades/TextData/charadestest.caption.txt 167562 39285
+SPLIT charades/TextData/charadestest.caption.txt 3720 1334
+charades/TextData/charadestrain.caption.txt 557378 128372
+SPLIT charades/TextData/charadestrain.caption.txt 12408 5338
+charades/TextData/charadesval.caption.txt 167562 39285
+SPLIT charades/TextData/charadesval.caption.txt 3720 1334
+charades/TextData/clip_ViT_B_32_charades_query_feat.hdf5 17423800 11913957
+charades/TextData/roberta_charades_query_feat.hdf5 559365376 516008552

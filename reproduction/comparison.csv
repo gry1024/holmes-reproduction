@@ -1,0 +1,41 @@
+﻿dataset,split,metric,reference_source,reference_reported,measured_raw,measured_rounded,rounded_difference
+Charades-STA,val,R@1,paper_main_table,2.3,2.28494623655914,2.3,0.0
+Charades-STA,val,R@5,paper_main_table,9.5,9.489247311827956,9.5,0.0
+Charades-STA,val,R@10,paper_main_table,15.2,15.21505376344086,15.2,0.0
+Charades-STA,val,R@100,paper_main_table,53.6,53.575268817204304,53.6,0.0
+Charades-STA,val,SumR,paper_main_table,80.6,80.56451612903226,80.6,0.0
+Charades-STA,test,R@1,paper_main_table,2.3,2.28494623655914,2.3,0.0
+Charades-STA,test,R@5,paper_main_table,9.5,9.489247311827956,9.5,0.0
+Charades-STA,test,R@10,paper_main_table,15.2,15.21505376344086,15.2,0.0
+Charades-STA,test,R@100,paper_main_table,53.6,53.575268817204304,53.6,0.0
+Charades-STA,test,SumR,paper_main_table,80.6,80.56451612903226,80.6,0.0
+ActivityNet Captions,val,R@1,paper_main_table,9.3,9.293467910874119,9.3,0.0
+ActivityNet Captions,val,R@5,paper_main_table,27.8,27.842315749381072,27.8,0.0
+ActivityNet Captions,val,R@10,paper_main_table,40.5,40.474830191074716,40.5,0.0
+ActivityNet Captions,val,R@100,paper_main_table,79.1,79.14048117818828,79.1,0.0
+ActivityNet Captions,val,SumR,paper_main_table,156.8,156.75109502951818,156.8,0.0
+ActivityNet Captions,test,R@1,paper_main_table,9.3,9.293467910874119,9.3,0.0
+ActivityNet Captions,test,R@5,paper_main_table,27.8,27.842315749381072,27.8,0.0
+ActivityNet Captions,test,R@10,paper_main_table,40.5,40.474830191074716,40.5,0.0
+ActivityNet Captions,test,R@100,paper_main_table,79.1,79.14048117818828,79.1,0.0
+ActivityNet Captions,test,SumR,paper_main_table,156.8,156.75109502951818,156.8,0.0
+TVR 双查询（论文主表）,val,R@1,paper_main_table,18.4,18.375401560348784,18.4,0.0
+TVR 双查询（论文主表）,val,R@5,paper_main_table,40.7,40.688389169343736,40.7,0.0
+TVR 双查询（论文主表）,val,R@10,paper_main_table,52.0,52.023864157870584,52.0,0.0
+TVR 双查询（论文主表）,val,R@100,paper_main_table,87.5,87.48967416245985,87.5,0.0
+TVR 双查询（论文主表）,val,SumR,paper_main_table,198.6,198.57732905002297,198.6,0.0
+TVR 双查询（论文主表）,test,R@1,paper_main_table,18.4,18.375401560348784,18.4,0.0
+TVR 双查询（论文主表）,test,R@5,paper_main_table,40.7,40.688389169343736,40.7,0.0
+TVR 双查询（论文主表）,test,R@10,paper_main_table,52.0,52.023864157870584,52.0,0.0
+TVR 双查询（论文主表）,test,R@100,paper_main_table,87.5,87.48967416245985,87.5,0.0
+TVR 双查询（论文主表）,test,SumR,paper_main_table,198.6,198.57732905002297,198.6,0.0
+TVR 单查询（官方仓库补充）,val,R@1,official_repository,17.3,17.34740706746214,17.3,0.0
+TVR 单查询（官方仓库补充）,val,R@5,official_repository,39.0,39.01789811840294,39.0,0.0
+TVR 单查询（官方仓库补充）,val,R@10,official_repository,50.4,50.43597980725103,50.4,0.0
+TVR 单查询（官方仓库补充）,val,R@100,official_repository,87.4,87.37035337310692,87.4,0.0
+TVR 单查询（官方仓库补充）,val,SumR,official_repository,194.2,194.17163836622302,194.2,0.0
+TVR 单查询（官方仓库补充）,test,R@1,official_repository,17.3,17.34740706746214,17.3,0.0
+TVR 单查询（官方仓库补充）,test,R@5,official_repository,39.0,39.01789811840294,39.0,0.0
+TVR 单查询（官方仓库补充）,test,R@10,official_repository,50.4,50.43597980725103,50.4,0.0
+TVR 单查询（官方仓库补充）,test,R@100,official_repository,87.4,87.37035337310692,87.4,0.0
+TVR 单查询（官方仓库补充）,test,SumR,official_repository,194.2,194.17163836622302,194.2,0.0

@@ -1,0 +1,12 @@
+RUN ['/home/groy/.venvs/holmes-eval/bin/python', '/mnt/e/just_put_everything_you_need_here/多模态学习/pre/reproduction/scripts/prepare_data.py', '/mnt/e/just_put_everything_you_need_here/多模态学习/pre/reproduction/downloads/charades-parallel.zip', 'charades']
+RUN ['/home/groy/.venvs/holmes-eval/bin/python', '/mnt/e/just_put_everything_you_need_here/多模态学习/pre/reproduction/scripts/evaluate.py', '--dataset', 'cha', '--checkpoint', '/mnt/e/just_put_everything_you_need_here/多模态学习/pre/reproduction/checkpoints/cha.ckpt']
+EVALUATION_COMPLETE cha
+RUN ['/home/groy/.venvs/holmes-eval/bin/python', '/mnt/e/just_put_everything_you_need_here/多模态学习/pre/reproduction/scripts/prepare_data.py', '/mnt/e/just_put_everything_you_need_here/多模态学习/pre/reproduction/downloads/activitynet.zip', 'activitynet']
+RUN ['/home/groy/.venvs/holmes-eval/bin/python', '/mnt/e/just_put_everything_you_need_here/多模态学习/pre/reproduction/scripts/evaluate.py', '--dataset', 'act', '--checkpoint', '/mnt/e/just_put_everything_you_need_here/多模态学习/pre/reproduction/checkpoints/act.ckpt']
+EVALUATION_COMPLETE act
+RUN ['/home/groy/.venvs/holmes-eval/bin/python', '/mnt/e/just_put_everything_you_need_here/多模态学习/pre/reproduction/scripts/prepare_data.py', '/mnt/e/just_put_everything_you_need_here/多模态学习/pre/reproduction/downloads/tvr.zip', 'tvr']
+RUN ['/home/groy/.venvs/holmes-eval/bin/python', '/mnt/e/just_put_everything_you_need_here/多模态学习/pre/reproduction/scripts/evaluate.py', '--dataset', 'tvr', '--checkpoint', '/mnt/e/just_put_everything_you_need_here/多模态学习/pre/reproduction/checkpoints/tvr-multi.ckpt', '--multi']
+EVALUATION_COMPLETE tvr-multi
+RUN ['/home/groy/.venvs/holmes-eval/bin/python', '/mnt/e/just_put_everything_you_need_here/多模态学习/pre/reproduction/scripts/evaluate.py', '--dataset', 'tvr', '--checkpoint', '/mnt/e/just_put_everything_you_need_here/多模态学习/pre/reproduction/checkpoints/tvr.ckpt']
+EVALUATION_COMPLETE tvr
+ALL_EVALUATIONS_COMPLETE

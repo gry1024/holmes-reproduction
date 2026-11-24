@@ -1,0 +1,10 @@
+EXTRACTED FeatureData/i3d/video2frames.txt
+EXTRACTED FeatureData/i3d/shape.txt
+EXTRACTED FeatureData/i3d/feature.bin
+EXTRACTED FeatureData/i3d/id.txt
+EXTRACTED TextData/activitynettrain.caption.txt
+EXTRACTED TextData/activitynettest.caption.txt
+EXTRACTED TextData/roberta_activitynet_query_feat.hdf5
+EXTRACTED activitynetval.caption.txt
+EXTRACTED TextData/activitynetval.caption.txt
+PREPARED activitynet

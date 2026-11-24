@@ -1,0 +1,71 @@
+{
+  "archive": "/mnt/e/just_put_everything_you_need_here/\u591a\u6a21\u6001\u5b66\u4e60/pre/reproduction/downloads/charades-parallel.zip",
+  "files": {
+    "FeatureData/i3d_rgb_lgi/feature.bin": {
+      "bytes": 2497605632,
+      "sha256": "c22fe1ae2378bb04742133216a33a1e0a4cc97e2338b33ff7873e8cca4978684"
+    },
+    "FeatureData/i3d_rgb_lgi/id.txt": {
+      "bytes": 5451917,
+      "sha256": "d094e4cb746b07cbb87272d1ca15b00cb17eeb7c52a6ca07a1794df1e23c3c45"
+    },
+    "FeatureData/i3d_rgb_lgi/shape.txt": {
+      "bytes": 11,
+      "sha256": "b876e4fd34386a5b5fd454ec2aa7e0ece13b72babd03ace052c8babac22ff3a5"
+    },
+    "FeatureData/i3d_rgb_lgi/video2frames.txt": {
+      "bytes": 7354611,
+      "sha256": "6ca36287286327a5fb4423bc5c5f7829305b43353f664a56a340eabee1b14071"
+    },
+    "TextData/charadestest.caption.txt": {
+      "bytes": 167562,
+      "sha256": "f467d4a19b1b6f6ea2edf868c210141f810841113b605a61d3655244c01aaec4"
+    },
+    "TextData/charadestrain.caption.txt": {
+      "bytes": 557378,
+      "sha256": "566f1e936866276ea13ebbda0f2cc2c569de695514e41f170d022d0b24efbcf1"
+    },
+    "TextData/charadesval.caption.txt": {
+      "bytes": 167562,
+      "sha256": "f467d4a19b1b6f6ea2edf868c210141f810841113b605a61d3655244c01aaec4"
+    },
+    "TextData/roberta_charades_query_feat.hdf5": {
+      "bytes": 559365376,
+      "sha256": "7230581f9f9fa5ec47ffdb2ff8ee2f020ffe4ce57d7719861fe1bcb9737a3653"
+    }
+  },
+  "splits": {
+    "TextData/charadestest.caption.txt": {
+      "queries": 3720,
+      "videos": 1334,
+      "query_set_sha256": "f7861ff72a08b802fe787681f57103e4d70402c872ae36bb5f5c3e796b20e381",
+      "video_set_sha256": "d83b886ca5db581eafbcb7e22e930fffe9ab07f3643894c56f26afb74bb72401",
+      "caption_set_sha256": "d0cad7c7ab8821619c0d0bacd678003ccd4d6bef7d31b82cb0b5d252c80a39c6",
+      "sha256": "f467d4a19b1b6f6ea2edf868c210141f810841113b605a61d3655244c01aaec4"
+    },
+    "TextData/charadestrain.caption.txt": {
+      "queries": 12408,
+      "videos": 5338,
+      "query_set_sha256": "23735bdaaaf4222ab96c7c804c75a2340853bdb81963b1446ebd3d72d05f7460",
+      "video_set_sha256": "df5724eb86aafaf0c733daefbd93196757ca6572a608e217201e51d229019a99",
+      "caption_set_sha256": "66bb3aacc408ab008cf88a98cbbc73000e1084e986439dc319c1e3cde26bf49b",
+      "sha256": "566f1e936866276ea13ebbda0f2cc2c569de695514e41f170d022d0b24efbcf1"
+    },
+    "TextData/charadesval.caption.txt": {
+      "queries": 3720,
+      "videos": 1334,
+      "query_set_sha256": "f7861ff72a08b802fe787681f57103e4d70402c872ae36bb5f5c3e796b20e381",
+      "video_set_sha256": "d83b886ca5db581eafbcb7e22e930fffe9ab07f3643894c56f26afb74bb72401",
+      "caption_set_sha256": "d0cad7c7ab8821619c0d0bacd678003ccd4d6bef7d31b82cb0b5d252c80a39c6",
+      "sha256": "f467d4a19b1b6f6ea2edf868c210141f810841113b605a61d3655244c01aaec4"
+    }
+  },
+  "archive_sha256": "49ede4a15e0206c110eeb4f50ce92bffd906a6d27a9e1bb514a3eed62b6afc3e",
+  "archive_crc_verified": true,
+  "conversion": {
+    "videos": 6672,
+    "rows": 609767,
+    "width": 1024,
+    "all_values_and_frame_order_verified": true
+  }
+}

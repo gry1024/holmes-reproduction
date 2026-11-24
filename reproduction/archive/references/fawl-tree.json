@@ -1,0 +1,479 @@
+{
+  "sha": "5cc806573bb2c60753a53766b524e0714b8522de",
+  "url": "https://api.github.com/repos/BUAAPY/FAWL/git/trees/5cc806573bb2c60753a53766b524e0714b8522de",
+  "tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "435bb2d91359656978c78500bbc588864225bddd",
+      "size": 35,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/435bb2d91359656978c78500bbc588864225bddd"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e236165a9a6a069ef8fc60765b77d99a066c6eb",
+      "size": 1844,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/7e236165a9a6a069ef8fc60765b77d99a066c6eb"
+    },
+    {
+      "path": "__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "302c73c42fac14d58a55f395a452931ab13c1f73",
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/trees/302c73c42fac14d58a55f395a452931ab13c1f73"
+    },
+    {
+      "path": "data/activitynet",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c615cf065714143d6efd60d39d6f867a42859f8c",
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/trees/c615cf065714143d6efd60d39d6f867a42859f8c"
+    },
+    {
+      "path": "data/activitynet/TextData",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8816e52de9e5423aca28db11b6581f589376ed19",
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/trees/8816e52de9e5423aca28db11b6581f589376ed19"
+    },
+    {
+      "path": "data/activitynet/TextData/prvr_vcmr_test.jsonl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "434341e1a140cb56d11bd89aa63b2a1f29232e6d",
+      "size": 2943725,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/434341e1a140cb56d11bd89aa63b2a1f29232e6d"
+    },
+    {
+      "path": "data/activitynet/TextData/prvr_vcmr_train.jsonl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f6f35e93516330d8862f3c568ce972824879edfe",
+      "size": 6293012,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/f6f35e93516330d8862f3c568ce972824879edfe"
+    },
+    {
+      "path": "data/activitynet/TextData/prvr_vcmr_val.jsonl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "434341e1a140cb56d11bd89aa63b2a1f29232e6d",
+      "size": 2943725,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/434341e1a140cb56d11bd89aa63b2a1f29232e6d"
+    },
+    {
+      "path": "data/activitynet/results",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d7ce020c0354c2b09c17d0cdfa9d701cc0ac2bce",
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/trees/d7ce020c0354c2b09c17d0cdfa9d701cc0ac2bce"
+    },
+    {
+      "path": "data/activitynet/results/VCMR",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0352faf52b9f962d4c0f7a5be4471b41f7314207",
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/trees/0352faf52b9f962d4c0f7a5be4471b41f7314207"
+    },
+    {
+      "path": "data/activitynet/results/VCMR/2024_09_02_14_41_04-activitynet-fawl",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "626015c8ec30ac9b33351df35d68e87f0727a614",
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/trees/626015c8ec30ac9b33351df35d68e87f0727a614"
+    },
+    {
+      "path": "data/activitynet/results/VCMR/2024_09_02_14_41_04-activitynet-fawl/code.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ffcc52b628b2fd0827e3156051ab0e66c20340e0",
+      "size": 91085,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/ffcc52b628b2fd0827e3156051ab0e66c20340e0"
+    },
+    {
+      "path": "data/activitynet/results/VCMR/2024_09_02_14_41_04-activitynet-fawl/inference_val_eval_after_train_VCMR_nms_metrics.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5096032efd046962bceeeda2a248651a77622df",
+      "size": 615,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/f5096032efd046962bceeeda2a248651a77622df"
+    },
+    {
+      "path": "data/activitynet/results/VCMR/2024_09_02_14_41_04-activitynet-fawl/latest_activitynet_val_predictions_VCMR_nms_metrics.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88cda1ff7a86aeb479a390374909352d294b977b",
+      "size": 617,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/88cda1ff7a86aeb479a390374909352d294b977b"
+    },
+    {
+      "path": "data/activitynet/results/VCMR/2024_09_02_14_41_04-activitynet-fawl/model.ckpt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a87b1531e0407a6d7da37b9f4e3153f4bc24975",
+      "size": 14560044,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/2a87b1531e0407a6d7da37b9f4e3153f4bc24975"
+    },
+    {
+      "path": "data/activitynet/results/VCMR/2024_09_02_14_41_04-activitynet-fawl/opt.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d6ec0719f419e5fb88d5a3ba5dfefb5a0808b33c",
+      "size": 2618,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/d6ec0719f419e5fb88d5a3ba5dfefb5a0808b33c"
+    },
+    {
+      "path": "data/activitynet/results/VCMR/2024_09_02_14_41_04-activitynet-fawl/performance.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09e962fe7b277b609a4b0dc09c9acdb35329541c",
+      "size": 25232,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/09e962fe7b277b609a4b0dc09c9acdb35329541c"
+    },
+    {
+      "path": "data/activitynet/results/VCMR/2024_09_02_14_41_04-activitynet-fawl/tensorboard_log",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2073e8b2927cd53a28c9fdbeac66fe67be1d1806",
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/trees/2073e8b2927cd53a28c9fdbeac66fe67be1d1806"
+    },
+    {
+      "path": "data/activitynet/results/VCMR/2024_09_02_14_41_04-activitynet-fawl/tensorboard_log/events.out.tfevents.1725259264.ubuntu.2067865.0",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "388fae2c42085d556828fd38acd097be7c14d176",
+      "size": 6960818,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/388fae2c42085d556828fd38acd097be7c14d176"
+    },
+    {
+      "path": "data/activitynet/results/VCMR/2024_09_02_14_41_04-activitynet-fawl/train.log.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb2a89776b64604443ec5f32d1a225a1b861c3cf",
+      "size": 12030,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/eb2a89776b64604443ec5f32d1a225a1b861c3cf"
+    },
+    {
+      "path": "data/charades",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cebe8f207b72ed3d890ec3b7b06437613f60216d",
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/trees/cebe8f207b72ed3d890ec3b7b06437613f60216d"
+    },
+    {
+      "path": "data/charades/results",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9b9dd9241d6a7f18f2ae051e04b3f859e5d10385",
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/trees/9b9dd9241d6a7f18f2ae051e04b3f859e5d10385"
+    },
+    {
+      "path": "data/charades/results/VCMR",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5a6f1757f38d7639dcee40ae5e2b2975f4040372",
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/trees/5a6f1757f38d7639dcee40ae5e2b2975f4040372"
+    },
+    {
+      "path": "data/charades/results/VCMR/2024_09_02_14_40_13-charades-fawl",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a360f3c44dbd262436cf50a9724b8835ef2c6fea",
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/trees/a360f3c44dbd262436cf50a9724b8835ef2c6fea"
+    },
+    {
+      "path": "data/charades/results/VCMR/2024_09_02_14_40_13-charades-fawl/code.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ffcc52b628b2fd0827e3156051ab0e66c20340e0",
+      "size": 91085,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/ffcc52b628b2fd0827e3156051ab0e66c20340e0"
+    },
+    {
+      "path": "data/charades/results/VCMR/2024_09_02_14_40_13-charades-fawl/inference_val_eval_after_train_VCMR_nms_metrics.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a759d427e9f45e31832e0de991bd95f3d5d96154",
+      "size": 616,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/a759d427e9f45e31832e0de991bd95f3d5d96154"
+    },
+    {
+      "path": "data/charades/results/VCMR/2024_09_02_14_40_13-charades-fawl/latest_charades_val_predictions_VCMR_nms_metrics.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1d8b504633d5a4d85db865ceb7038c233953dd7",
+      "size": 615,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/c1d8b504633d5a4d85db865ceb7038c233953dd7"
+    },
+    {
+      "path": "data/charades/results/VCMR/2024_09_02_14_40_13-charades-fawl/model.ckpt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71287a063b5c367b3c91da90462a69480abcd29f",
+      "size": 14560044,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/71287a063b5c367b3c91da90462a69480abcd29f"
+    },
+    {
+      "path": "data/charades/results/VCMR/2024_09_02_14_40_13-charades-fawl/opt.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cfde6e0545ca812ebb03a3e585c2301e067ac69d",
+      "size": 2589,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/cfde6e0545ca812ebb03a3e585c2301e067ac69d"
+    },
+    {
+      "path": "data/charades/results/VCMR/2024_09_02_14_40_13-charades-fawl/performance.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a518a57962a524eb75d70ec17304c8a9c30d851b",
+      "size": 27562,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/a518a57962a524eb75d70ec17304c8a9c30d851b"
+    },
+    {
+      "path": "data/charades/results/VCMR/2024_09_02_14_40_13-charades-fawl/tensorboard_log",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "67a80c8982fa4612126e61ce19f44e50bd858a23",
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/trees/67a80c8982fa4612126e61ce19f44e50bd858a23"
+    },
+    {
+      "path": "data/charades/results/VCMR/2024_09_02_14_40_13-charades-fawl/tensorboard_log/events.out.tfevents.1725259213.ubuntu.2066470.0",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63efd607d563305a003ebe86e28f34acb9b6c668",
+      "size": 2825966,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/63efd607d563305a003ebe86e28f34acb9b6c668"
+    },
+    {
+      "path": "data/charades/results/VCMR/2024_09_02_14_40_13-charades-fawl/train.log.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a1bb39a2ae97dd494216b1454029d1265bb0ead4",
+      "size": 13294,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/a1bb39a2ae97dd494216b1454029d1265bb0ead4"
+    },
+    {
+      "path": "eval.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff5794e402ccaf918d4cff50cffb2c1acf1e8150",
+      "size": 17551,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/ff5794e402ccaf918d4cff50cffb2c1acf1e8150"
+    },
+    {
+      "path": "method",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e6eb81bb259a2725bbba4da87197af02ce83c5f0",
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/trees/e6eb81bb259a2725bbba4da87197af02ce83c5f0"
+    },
+    {
+      "path": "method/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "method/config.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ee8c4f64a2487bb3941449cfd4ac8c4698316f6",
+      "size": 15576,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/4ee8c4f64a2487bb3941449cfd4ac8c4698316f6"
+    },
+    {
+      "path": "method/data_provider.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a859074ba2df261728f865b10dc2dcbc2555ce9",
+      "size": 13784,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/9a859074ba2df261728f865b10dc2dcbc2555ce9"
+    },
+    {
+      "path": "method/losses.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b6f177b12e33b3dc2a77a63ef96f3c2940a146e5",
+      "size": 11513,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/b6f177b12e33b3dc2a77a63ef96f3c2940a146e5"
+    },
+    {
+      "path": "method/model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ed559758a30ea9d2f966815d5e9d3ba8539c36f",
+      "size": 20956,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/5ed559758a30ea9d2f966815d5e9d3ba8539c36f"
+    },
+    {
+      "path": "method/model_components.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29b9657a2d6aa2ca0826e7e77ea41754f0f222a3",
+      "size": 14340,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/29b9657a2d6aa2ca0826e7e77ea41754f0f222a3"
+    },
+    {
+      "path": "method/optimization.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77d370be7d882a70096e88314251fe4febb70bcb",
+      "size": 14467,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/77d370be7d882a70096e88314251fe4febb70bcb"
+    },
+    {
+      "path": "requirements.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8bc7c0a66d1bc34564c3e0dd0251edd52e3c44f6",
+      "size": 89,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/8bc7c0a66d1bc34564c3e0dd0251edd52e3c44f6"
+    },
+    {
+      "path": "scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "636a1c037267b32a021c68353a80b2e69117d9aa",
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/trees/636a1c037267b32a021c68353a80b2e69117d9aa"
+    },
+    {
+      "path": "scripts/test.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6bab0aee70430a3b0f3045f23c2c674e57941364",
+      "size": 415,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/6bab0aee70430a3b0f3045f23c2c674e57941364"
+    },
+    {
+      "path": "scripts/train_activitynet.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f88d38fb7ce5986245c8cbad67d5d8e8e3fd485",
+      "size": 897,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/7f88d38fb7ce5986245c8cbad67d5d8e8e3fd485"
+    },
+    {
+      "path": "scripts/train_charades.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc071a11b38bba6904fa624d6d2e171ffd82b76f",
+      "size": 822,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/dc071a11b38bba6904fa624d6d2e171ffd82b76f"
+    },
+    {
+      "path": "setup.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f748e425670feb14bc08c352d65d55d43a7337c",
+      "size": 164,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/4f748e425670feb14bc08c352d65d55d43a7337c"
+    },
+    {
+      "path": "standalone_eval",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "96b2d4e1d6f577fbbcdc1ac3221ca36eae1cbfa3",
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/trees/96b2d4e1d6f577fbbcdc1ac3221ca36eae1cbfa3"
+    },
+    {
+      "path": "standalone_eval/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9da7f9fc44e591cd55781ebfe80a77d0aeb664e5",
+      "size": 4223,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/9da7f9fc44e591cd55781ebfe80a77d0aeb664e5"
+    },
+    {
+      "path": "standalone_eval/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "standalone_eval/eval.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1a4dc5179f599c7e7f9f101d8c1d6f5f6a626df",
+      "size": 14671,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/e1a4dc5179f599c7e7f9f101d8c1d6f5f6a626df"
+    },
+    {
+      "path": "standalone_eval/eval_sample.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91eebd8e4b632433bf5a642d9a9b8dd6d7f21fc9",
+      "size": 343,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/91eebd8e4b632433bf5a642d9a9b8dd6d7f21fc9"
+    },
+    {
+      "path": "train.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76dda9fbba885da03ad61a080bcb6b9826cb7324",
+      "size": 13533,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/76dda9fbba885da03ad61a080bcb6b9826cb7324"
+    },
+    {
+      "path": "utils",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c45b14d6f67c70942ec433e74f9b9f9fa193fee6",
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/trees/c45b14d6f67c70942ec433e74f9b9f9fa193fee6"
+    },
+    {
+      "path": "utils/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "utils/basic_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a03d8ca9830e6b57e7de9bf3f8999055a90336e",
+      "size": 10630,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/8a03d8ca9830e6b57e7de9bf3f8999055a90336e"
+    },
+    {
+      "path": "utils/convert_hdf5.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c681d9b73d43bbde6ef60b2b5ea7f4c18d19390",
+      "size": 3235,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/0c681d9b73d43bbde6ef60b2b5ea7f4c18d19390"
+    },
+    {
+      "path": "utils/model_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ecc19bc45cfadc3ad433242b4baf7f1548470bf",
+      "size": 10507,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/1ecc19bc45cfadc3ad433242b4baf7f1548470bf"
+    },
+    {
+      "path": "utils/temporal_nms.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "545ed8045d7da4a6a831395029e39c0f803025d5",
+      "size": 2960,
+      "url": "https://api.github.com/repos/BUAAPY/FAWL/git/blobs/545ed8045d7da4a6a831395029e39c0f803025d5"
+    }
+  ],
+  "truncated": false
+}

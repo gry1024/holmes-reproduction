@@ -1,0 +1,9 @@
+EXTRACTED FeatureData/i3d_rgb_lgi/feature.bin
+EXTRACTED FeatureData/i3d_rgb_lgi/id.txt
+EXTRACTED FeatureData/i3d_rgb_lgi/shape.txt
+EXTRACTED FeatureData/i3d_rgb_lgi/video2frames.txt
+EXTRACTED TextData/charadestest.caption.txt
+EXTRACTED TextData/charadestrain.caption.txt
+EXTRACTED TextData/charadesval.caption.txt
+EXTRACTED TextData/roberta_charades_query_feat.hdf5
+PREPARED charades

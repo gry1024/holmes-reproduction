@@ -1,0 +1,83 @@
+{
+  "archive": "/mnt/e/just_put_everything_you_need_here/\u591a\u6a21\u6001\u5b66\u4e60/pre/reproduction/downloads/activitynet.zip",
+  "files": {
+    "FeatureData/i3d/video2frames.txt": {
+      "bytes": 56642368,
+      "sha256": "722522c3a1d85e3a8ccb109999ad3eff75c823e428ddcc05b4f6a4afd1ed7644"
+    },
+    "FeatureData/i3d/shape.txt": {
+      "bytes": 12,
+      "sha256": "9d7b78a9cfb9a84f731a6c4444739b32696bf8c73fa71af53e2fdea95c42188a"
+    },
+    "FeatureData/i3d/feature.bin": {
+      "bytes": 11258396672,
+      "sha256": "28288e8e43fda33876dd14c582f4c42f907f56ff72e14176a6ccc1780399469f"
+    },
+    "FeatureData/i3d/id.txt": {
+      "bytes": 48140484,
+      "sha256": "244d0a2f4e1029da535f9a9c0ef8cbd9bf16067a47c506104c0b7f424f64b845"
+    },
+    "TextData/activitynettrain.caption.txt": {
+      "bytes": 3044400,
+      "sha256": "009b8f032136fe2a93f44cf443139c97bedb1769d308633f59afab9d25f44215"
+    },
+    "TextData/activitynettest.caption.txt": {
+      "bytes": 1427615,
+      "sha256": "28ae704d85bb353bc0cecbef555284d4b93abbc990caf60a1c8f4bdd4b1a2d29"
+    },
+    "TextData/roberta_activitynet_query_feat.hdf5": {
+      "bytes": 3526624512,
+      "sha256": "8566c3b889fc67d57d16a7e0f970bdf20ce7ba2b0a66e0c8360ba9640f53b977"
+    },
+    "activitynetval.caption.txt": {
+      "bytes": 1427615,
+      "sha256": "28ae704d85bb353bc0cecbef555284d4b93abbc990caf60a1c8f4bdd4b1a2d29"
+    },
+    "TextData/activitynetval.caption.txt": {
+      "bytes": 1427615,
+      "sha256": "28ae704d85bb353bc0cecbef555284d4b93abbc990caf60a1c8f4bdd4b1a2d29"
+    }
+  },
+  "splits": {
+    "activitynetval.caption.txt": {
+      "queries": 15753,
+      "videos": 4430,
+      "query_set_sha256": "9a8872eeac9e49c18188a84c682d46dc53548f87e19cf6eaf6ffcf92c5d01050",
+      "video_set_sha256": "471127c4fabedfac8ddc602a1b38b17aec53eadec116a34b58199c9322ab4637",
+      "caption_set_sha256": "4b5e38185926a0860e09963a396688994f848c327bd06ae24a339cbf8c2ff30a",
+      "sha256": "28ae704d85bb353bc0cecbef555284d4b93abbc990caf60a1c8f4bdd4b1a2d29"
+    },
+    "TextData/activitynettest.caption.txt": {
+      "queries": 15753,
+      "videos": 4430,
+      "query_set_sha256": "9a8872eeac9e49c18188a84c682d46dc53548f87e19cf6eaf6ffcf92c5d01050",
+      "video_set_sha256": "471127c4fabedfac8ddc602a1b38b17aec53eadec116a34b58199c9322ab4637",
+      "caption_set_sha256": "4b5e38185926a0860e09963a396688994f848c327bd06ae24a339cbf8c2ff30a",
+      "sha256": "28ae704d85bb353bc0cecbef555284d4b93abbc990caf60a1c8f4bdd4b1a2d29"
+    },
+    "TextData/activitynettrain.caption.txt": {
+      "queries": 33721,
+      "videos": 9043,
+      "query_set_sha256": "949ccaa2c9cef0b78c1984240c9aa567371ccb4bd0707491b4ff6a90e024f698",
+      "video_set_sha256": "4d0e47f3ecf13ee1b017df07721528ff0265072be297a1548e1a2132e6330f68",
+      "caption_set_sha256": "e6d4626513d316742072fa96cd8de19fb2f95f1dd0d86b49e5dd0b4005b4683e",
+      "sha256": "009b8f032136fe2a93f44cf443139c97bedb1769d308633f59afab9d25f44215"
+    },
+    "TextData/activitynetval.caption.txt": {
+      "queries": 15753,
+      "videos": 4430,
+      "query_set_sha256": "9a8872eeac9e49c18188a84c682d46dc53548f87e19cf6eaf6ffcf92c5d01050",
+      "video_set_sha256": "471127c4fabedfac8ddc602a1b38b17aec53eadec116a34b58199c9322ab4637",
+      "caption_set_sha256": "4b5e38185926a0860e09963a396688994f848c327bd06ae24a339cbf8c2ff30a",
+      "sha256": "28ae704d85bb353bc0cecbef555284d4b93abbc990caf60a1c8f4bdd4b1a2d29"
+    }
+  },
+  "archive_sha256": "e5abb353466fac987e65ff376bb815820d0c6065e104eceefd2caaa70a6e0121",
+  "archive_crc_verified": true,
+  "conversion": {
+    "videos": 13473,
+    "rows": 2748632,
+    "width": 1024,
+    "all_values_and_frame_order_verified": true
+  }
+}

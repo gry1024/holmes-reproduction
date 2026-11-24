@@ -1,0 +1,9 @@
+EXTRACTED FeatureData/i3d_resnet/video2frames.txt
+EXTRACTED FeatureData/i3d_resnet/shape.txt
+EXTRACTED FeatureData/i3d_resnet/feature.bin
+EXTRACTED FeatureData/i3d_resnet/id.txt
+EXTRACTED TextData/tvrtrain.caption.txt
+EXTRACTED TextData/tvrtest.caption.txt
+EXTRACTED TextData/roberta_tvr_query_feat.hdf5
+EXTRACTED TextData/tvrval.caption.txt
+PREPARED tvr

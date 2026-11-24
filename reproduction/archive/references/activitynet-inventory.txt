@@ -1,0 +1,16 @@
+FeatureData/new_clip_vit_32_activitynet_vid_features.hdf5 5634551312 5179958480
+FeatureData/i3d/ 0 0
+FeatureData/i3d/video2frames.txt 56642368 6197432
+FeatureData/i3d/shape.txt 12 12
+FeatureData/i3d/feature.bin 11258396672 9995065660
+FeatureData/i3d/id.txt 48140484 5763527
+TextData/activitynettrain.caption.txt 3044400 956557
+SPLIT TextData/activitynettrain.caption.txt 33721 9043
+TextData/activitynettest.caption.txt 1427615 447535
+SPLIT TextData/activitynettest.caption.txt 15753 4430
+TextData/roberta_activitynet_query_feat.hdf5 3526624512 3261557229
+TextData/clip_ViT_B_32_activitynet_query_feat.hdf5 222913285 76495992
+activitynetval.caption.txt 1427615 442800
+SPLIT activitynetval.caption.txt 15753 4430
+TextData/activitynetval.caption.txt 1427615 442800
+SPLIT TextData/activitynetval.caption.txt 15753 4430

@@ -1,0 +1,224 @@
+[
+  {
+    "from": "Revisiting Uncertainty On Evidential Learning for Partially Relevant Video Retrieval.txt",
+    "to": "papers/source.txt",
+    "status": "moved",
+    "detail": ""
+  },
+  {
+    "from": "Holmes论文精读笔记.pdf",
+    "to": "notes/Holmes论文精读笔记.pdf",
+    "status": "moved",
+    "detail": ""
+  },
+  {
+    "from": "latex_build",
+    "to": "notes/latex",
+    "status": "moved",
+    "detail": ""
+  },
+  {
+    "from": "reproduction/downloads/Holmes-act.zip.parts",
+    "to": "reproduction/archive/待清理/Holmes-act.zip.parts",
+    "status": "moved",
+    "detail": ""
+  },
+  {
+    "from": "reproduction/downloads/Holmes-cha-parallel.zip.parts",
+    "to": "reproduction/archive/待清理/Holmes-cha-parallel.zip.parts",
+    "status": "moved",
+    "detail": ""
+  },
+  {
+    "from": "reproduction/downloads/Holmes-tvr-multi.zip.parts",
+    "to": "reproduction/archive/待清理/Holmes-tvr-multi.zip.parts",
+    "status": "moved",
+    "detail": ""
+  },
+  {
+    "from": "reproduction/downloads/Holmes-tvr.zip.parts",
+    "to": "reproduction/archive/待清理/Holmes-tvr.zip.parts",
+    "status": "moved",
+    "detail": ""
+  },
+  {
+    "from": "reproduction/scripts/__pycache__",
+    "to": "reproduction/archive/待清理/python-cache",
+    "status": "moved",
+    "detail": ""
+  },
+  {
+    "from": "reproduction/.venv-win",
+    "to": "reproduction/archive/待清理/unused-windows-env",
+    "status": "moved",
+    "detail": ""
+  },
+  {
+    "from": ".screenshots",
+    "to": "reproduction/archive/待清理/empty-screenshots",
+    "status": "moved",
+    "detail": ""
+  },
+  {
+    "from": "reproduction/results/activitynet-inventory.txt",
+    "to": "reproduction/archive/references/activitynet-inventory.txt",
+    "status": "moved",
+    "detail": ""
+  },
+  {
+    "from": "reproduction/results/archive-inventory.txt",
+    "to": "reproduction/archive/references/archive-inventory.txt",
+    "status": "moved",
+    "detail": ""
+  },
+  {
+    "from": "reproduction/results/author-convert.py",
+    "to": "reproduction/archive/references/author-convert.py",
+    "status": "moved",
+    "detail": ""
+  },
+  {
+    "from": "reproduction/results/cha-checkpoint-inspection.log",
+    "to": "reproduction/archive/setup-logs/cha-checkpoint-inspection.log",
+    "status": "moved",
+    "detail": ""
+  },
+  {
+    "from": "reproduction/results/cha-model-smoke.log",
+    "to": "reproduction/archive/setup-logs/cha-model-smoke.log",
+    "status": "moved",
+    "detail": ""
+  },
+  {
+    "from": "reproduction/results/cha-structure-check.log",
+    "to": "reproduction/archive/setup-logs/cha-structure-check.log",
+    "status": "moved",
+    "detail": ""
+  },
+  {
+    "from": "reproduction/results/cha-weight-inventory.txt",
+    "to": "reproduction/archive/references/cha-weight-inventory.txt",
+    "status": "moved",
+    "detail": ""
+  },
+  {
+    "from": "reproduction/results/checkpoint-reported-values.log",
+    "to": "reproduction/archive/setup-logs/checkpoint-reported-values.log",
+    "status": "moved",
+    "detail": ""
+  },
+  {
+    "from": "reproduction/results/download-act-weight.log",
+    "to": "reproduction/archive/setup-logs/download-act-weight.log",
+    "status": "moved",
+    "detail": ""
+  },
+  {
+    "from": "reproduction/results/download-activitynet.log",
+    "to": "reproduction/archive/setup-logs/download-activitynet.log",
+    "status": "moved",
+    "detail": ""
+  },
+  {
+    "from": "reproduction/results/download-cha-weight.log",
+    "to": "reproduction/archive/setup-logs/download-cha-weight.log",
+    "status": "moved",
+    "detail": ""
+  },
+  {
+    "from": "reproduction/results/download-charades.log",
+    "to": "reproduction/archive/setup-logs/download-charades.log",
+    "status": "moved",
+    "detail": ""
+  },
+  {
+    "from": "reproduction/results/download-tvr-multi-weight.log",
+    "to": "reproduction/archive/setup-logs/download-tvr-multi-weight.log",
+    "status": "moved",
+    "detail": ""
+  },
+  {
+    "from": "reproduction/results/download-tvr-weight.log",
+    "to": "reproduction/archive/setup-logs/download-tvr-weight.log",
+    "status": "moved",
+    "detail": ""
+  },
+  {
+    "from": "reproduction/results/download-tvr.log",
+    "to": "reproduction/archive/setup-logs/download-tvr.log",
+    "status": "moved",
+    "detail": ""
+  },
+  {
+    "from": "reproduction/results/environment-linux.log",
+    "to": "reproduction/archive/setup-logs/environment-linux.log",
+    "status": "moved",
+    "detail": ""
+  },
+  {
+    "from": "reproduction/results/environment-probe.log",
+    "to": "reproduction/archive/setup-logs/environment-probe.log",
+    "status": "moved",
+    "detail": ""
+  },
+  {
+    "from": "reproduction/results/environment.log",
+    "to": "reproduction/archive/setup-logs/environment.log",
+    "status": "moved",
+    "detail": ""
+  },
+  {
+    "from": "reproduction/results/fawl-tree.json",
+    "to": "reproduction/archive/references/fawl-tree.json",
+    "status": "moved",
+    "detail": ""
+  },
+  {
+    "from": "reproduction/results/mssl-data.py",
+    "to": "reproduction/archive/references/mssl-data.py",
+    "status": "moved",
+    "detail": ""
+  },
+  {
+    "from": "reproduction/results/mssl-readme.md",
+    "to": "reproduction/archive/references/mssl-readme.md",
+    "status": "moved",
+    "detail": ""
+  },
+  {
+    "from": "reproduction/results/mssl-tree.json",
+    "to": "reproduction/archive/references/mssl-tree.json",
+    "status": "moved",
+    "detail": ""
+  },
+  {
+    "from": "reproduction/results/parallel-weight.log",
+    "to": "reproduction/archive/setup-logs/parallel-weight.log",
+    "status": "moved",
+    "detail": ""
+  },
+  {
+    "from": "reproduction/results/parallel.log",
+    "to": "reproduction/archive/setup-logs/parallel.log",
+    "status": "moved",
+    "detail": ""
+  },
+  {
+    "from": "reproduction/results/torch-official-index.html",
+    "to": "reproduction/archive/references/torch-official-index.html",
+    "status": "moved",
+    "detail": ""
+  },
+  {
+    "from": "reproduction/results/torch-windows.log",
+    "to": "reproduction/archive/setup-logs/torch-windows.log",
+    "status": "moved",
+    "detail": ""
+  },
+  {
+    "from": "reproduction/results/tvr-inventory.txt",
+    "to": "reproduction/archive/references/tvr-inventory.txt",
+    "status": "moved",
+    "detail": ""
+  }
+]

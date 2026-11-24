@@ -1,0 +1,71 @@
+{
+  "archive": "/mnt/e/just_put_everything_you_need_here/\u591a\u6a21\u6001\u5b66\u4e60/pre/reproduction/downloads/tvr.zip",
+  "files": {
+    "FeatureData/i3d_resnet/video2frames.txt": {
+      "bytes": 36638886,
+      "sha256": "95e966878a3bcaa709f7c9b421ef64c424af264d334f473e4c4e059fd410a255"
+    },
+    "FeatureData/i3d_resnet/shape.txt": {
+      "bytes": 12,
+      "sha256": "216a18be68eb0e136eb8e1b8f667af8921d577e38cf9ea936cb0643a5bc4703c"
+    },
+    "FeatureData/i3d_resnet/feature.bin": {
+      "bytes": 13643759616,
+      "sha256": "c7e3e5a9715754d1928fd46241b944ed680f1f5b8e78bc6117290bea359aee0d"
+    },
+    "FeatureData/i3d_resnet/id.txt": {
+      "bytes": 32622328,
+      "sha256": "604f50a91409f16b230710594e2b99e0d483511caf33217d2a58ccb5a27d5bed"
+    },
+    "TextData/tvrtrain.caption.txt": {
+      "bytes": 8639892,
+      "sha256": "e323c674a44244ede7908d5360116c8fd1c3cc49da448c6f9e3ac748d7c27b6d"
+    },
+    "TextData/tvrtest.caption.txt": {
+      "bytes": 1079407,
+      "sha256": "ae9a60f6fc7581a3295e366d9a91c21b481d4411fb94b68422c09dc1751f3ef1"
+    },
+    "TextData/roberta_tvr_query_feat.hdf5": {
+      "bytes": 4443336848,
+      "sha256": "309c03d4cf828620fcd5bf8cb27298c2fee31af82be4122139f82bc633b4a082"
+    },
+    "TextData/tvrval.caption.txt": {
+      "bytes": 1079407,
+      "sha256": "ae9a60f6fc7581a3295e366d9a91c21b481d4411fb94b68422c09dc1751f3ef1"
+    }
+  },
+  "splits": {
+    "TextData/tvrtest.caption.txt": {
+      "queries": 10895,
+      "videos": 2179,
+      "query_set_sha256": "573ec71f41ed1dbeb1ca78151d5b4ea8ddcf2adba4696af2b971eb98902db12f",
+      "video_set_sha256": "06a7015a29f3af6a6ea487d1aa2e15d63965d33693a8e100bb1e6cf83797f70b",
+      "caption_set_sha256": "4c9295db30d1fc9db1cdd4e010a619c9b0a6f409aaed643e2fcc6b9ff7eddf36",
+      "sha256": "ae9a60f6fc7581a3295e366d9a91c21b481d4411fb94b68422c09dc1751f3ef1"
+    },
+    "TextData/tvrtrain.caption.txt": {
+      "queries": 87174,
+      "videos": 17435,
+      "query_set_sha256": "df9a650eedd141794033c909c774d7aa2f1221b85f0a67c09d8658400790dcc8",
+      "video_set_sha256": "d87971710bb80496331538ac759cf529f9f45a0afef9babd7957ec2024c8d73a",
+      "caption_set_sha256": "3aee7b8197c48eea95b232eab1b3ad552a0e1edade763a83f83834f678424ee8",
+      "sha256": "e323c674a44244ede7908d5360116c8fd1c3cc49da448c6f9e3ac748d7c27b6d"
+    },
+    "TextData/tvrval.caption.txt": {
+      "queries": 10895,
+      "videos": 2179,
+      "query_set_sha256": "573ec71f41ed1dbeb1ca78151d5b4ea8ddcf2adba4696af2b971eb98902db12f",
+      "video_set_sha256": "06a7015a29f3af6a6ea487d1aa2e15d63965d33693a8e100bb1e6cf83797f70b",
+      "caption_set_sha256": "4c9295db30d1fc9db1cdd4e010a619c9b0a6f409aaed643e2fcc6b9ff7eddf36",
+      "sha256": "ae9a60f6fc7581a3295e366d9a91c21b481d4411fb94b68422c09dc1751f3ef1"
+    }
+  },
+  "archive_sha256": "533058d5c77d9e4bdbb41bc2d5af206885db58e22644fb986062058f373fd8bc",
+  "archive_crc_verified": true,
+  "conversion": {
+    "videos": 21825,
+    "rows": 1110332,
+    "width": 3072,
+    "all_values_and_frame_order_verified": true
+  }
+}

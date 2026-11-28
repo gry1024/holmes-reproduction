@@ -4,16 +4,22 @@
 
 | 内容 | 入口 |
 |---|---|
+| 实验总报告 | [原版重训、三组改进与融合权重敏感性分析](experiments/RESULTS.md) |
+| 汇报 PPT | [最终版：含重训对照与敏感性分析](output/Holmes_Paper_Presentation_Final.pptx) |
 | 原始论文 | [Holmes_paper.pdf](Holmes_paper.pdf) |
 | 中文译版 | [PDF、LaTeX 源码与致谢](papers/holmes-zh/README.md) |
 | 中文精读笔记 | [Holmes论文精读笔记.pdf](notes/Holmes论文精读笔记.pdf) |
+| 改进实验方案 | [多局部证据聚合与查询自适应尺度融合](notes/Holmes改进实验方案.md) |
+| 融合权重敏感性 | [重训权重六点扫描、曲线与原始指标](experiments/results/fusion-sensitivity-retrained/README.md) |
 | 论文来源 | [作者仓库](https://github.com/lijun2005/ICML26-Holmes) · [原始链接记录](papers/source.txt) |
-| 复现结果与论文对照 | [RESULTS.md](reproduction/RESULTS.md) |
+| 历史官方权重复评 | [RESULTS.md](reproduction/RESULTS.md) |
 | 逐项数值对照 | [comparison.csv](reproduction/comparison.csv) |
 | 复现环境与重跑命令 | [复现说明](reproduction/README.md) |
 | 本次整理与清理记录 | [整理记录](reproduction/archive/CLEANUP-2026-11-24.md) |
 
 ## Quickstart
+
+重训与改进实验的环境、数据和运行命令见[实验总报告](experiments/RESULTS.md)及[运行记录](experiments/RUN.md)。以下命令用于历史官方权重复评。
 
 需要 Linux 或 WSL2、Python 3.11 和 NVIDIA CUDA GPU。请先用有仓库访问权限的 GitHub 账号登录 `gh`。论文、笔记和已有评测结果可直接浏览。
 
@@ -74,5 +80,3 @@ pre/
     ├── downloads/               用户下载的官方 ZIP
     └── results/                 实测指标、校验清单与运行日志
 ```
-
-

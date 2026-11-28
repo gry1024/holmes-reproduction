@@ -1,0 +1,86 @@
+{
+  "dataset": "cha",
+  "split": "val",
+  "queries": 3720,
+  "videos": 1334,
+  "checkpoint_sha256": "1b8b1e24e645ab054fc6793c68291a1a4a0142a5238e19a3c99e1b27ab2c8399",
+  "torch": "2.7.1+cu128",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "precision": "FP32",
+  "checkpoint_source": "retrained_baseline",
+  "checkpoint_path": "/data1/quant_team/holmes-20261127/runs/cha/baseline/best.pt",
+  "original_clip_weight": 0.6,
+  "baseline_matches_checkpoint": true,
+  "baseline_matches_official": false,
+  "baseline": {
+    "clip_weight": 0.6,
+    "frame_weight": 0.4,
+    "R1": 2.6344086021505375,
+    "R5": 8.870967741935484,
+    "R10": 13.817204301075268,
+    "R100": 52.876344086021504,
+    "SumR": 78.1989247311828
+  },
+  "points": [
+    {
+      "clip_weight": 0.0,
+      "frame_weight": 1.0,
+      "R1": 2.5,
+      "R5": 8.064516129032258,
+      "R10": 13.333333333333334,
+      "R100": 52.096774193548384,
+      "SumR": 75.99462365591398
+    },
+    {
+      "clip_weight": 0.2,
+      "frame_weight": 0.8,
+      "R1": 2.4193548387096775,
+      "R5": 8.413978494623656,
+      "R10": 13.844086021505376,
+      "R100": 52.74193548387097,
+      "SumR": 77.41935483870968
+    },
+    {
+      "clip_weight": 0.4,
+      "frame_weight": 0.6,
+      "R1": 2.5806451612903225,
+      "R5": 8.655913978494624,
+      "R10": 14.059139784946236,
+      "R100": 52.82258064516129,
+      "SumR": 78.11827956989247
+    },
+    {
+      "clip_weight": 0.6,
+      "frame_weight": 0.4,
+      "R1": 2.6344086021505375,
+      "R5": 8.870967741935484,
+      "R10": 13.817204301075268,
+      "R100": 52.876344086021504,
+      "SumR": 78.1989247311828
+    },
+    {
+      "clip_weight": 0.8,
+      "frame_weight": 0.19999999999999996,
+      "R1": 2.3118279569892475,
+      "R5": 8.682795698924732,
+      "R10": 13.951612903225806,
+      "R100": 52.473118279569896,
+      "SumR": 77.41935483870968
+    },
+    {
+      "clip_weight": 1.0,
+      "frame_weight": 0.0,
+      "R1": 2.096774193548387,
+      "R5": 8.387096774193548,
+      "R10": 13.655913978494624,
+      "R100": 52.25806451612903,
+      "SumR": 76.39784946236558
+    }
+  ],
+  "seconds": 37.279388666152954,
+  "peak_allocated_gib": 1.0896878242492676,
+  "val_caption_sha256": "f467d4a19b1b6f6ea2edf868c210141f810841113b605a61d3655244c01aaec4",
+  "test_caption_sha256": "f467d4a19b1b6f6ea2edf868c210141f810841113b605a61d3655244c01aaec4",
+  "val_test_caption_files_identical": true,
+  "protocol": "Fixed checkpoint selected at default fusion weight; cached per-branch scores; author full-candidate ranking metrics; no per-weight retraining or reselection."
+}

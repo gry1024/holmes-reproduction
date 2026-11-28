@@ -1,0 +1,40 @@
+
+Computing query2video scores:   0%|          | 0/22 [00:00<?, ?it/s]
+Computing query2video scores:   5%|▍         | 1/22 [00:00<00:14,  1.41it/s]
+Computing query2video scores:   9%|▉         | 2/22 [00:01<00:13,  1.50it/s]
+Computing query2video scores:  14%|█▎        | 3/22 [00:01<00:11,  1.64it/s]
+Computing query2video scores:  18%|█▊        | 4/22 [00:02<00:09,  1.90it/s]
+Computing query2video scores:  23%|██▎       | 5/22 [00:02<00:08,  2.07it/s]
+Computing query2video scores:  27%|██▋       | 6/22 [00:03<00:07,  2.21it/s]
+Computing query2video scores:  32%|███▏      | 7/22 [00:03<00:06,  2.30it/s]
+Computing query2video scores:  36%|███▋      | 8/22 [00:03<00:05,  2.34it/s]
+Computing query2video scores:  41%|████      | 9/22 [00:04<00:05,  2.37it/s]
+Computing query2video scores:  45%|████▌     | 10/22 [00:04<00:05,  2.39it/s]
+Computing query2video scores:  50%|█████     | 11/22 [00:05<00:04,  2.39it/s]
+Computing query2video scores:  55%|█████▍    | 12/22 [00:05<00:04,  2.41it/s]
+Computing query2video scores:  59%|█████▉    | 13/22 [00:05<00:03,  2.45it/s]
+Computing query2video scores:  64%|██████▎   | 14/22 [00:06<00:03,  2.48it/s]
+Computing query2video scores:  68%|██████▊   | 15/22 [00:06<00:02,  2.49it/s]
+Computing query2video scores:  73%|███████▎  | 16/22 [00:07<00:02,  2.48it/s]
+Computing query2video scores:  77%|███████▋  | 17/22 [00:07<00:01,  2.51it/s]
+Computing query2video scores:  82%|████████▏ | 18/22 [00:07<00:01,  2.53it/s]
+Computing query2video scores:  86%|████████▋ | 19/22 [00:08<00:01,  2.55it/s]
+Computing query2video scores:  91%|█████████ | 20/22 [00:08<00:00,  2.55it/s]
+Computing query2video scores:  95%|█████████▌| 21/22 [00:09<00:00,  2.52it/s]
+Computing query2video scores: 100%|██████████| 22/22 [00:09<00:00,  2.54it/s]
+Computing query2video scores: 100%|██████████| 22/22 [00:09<00:00,  2.32it/s]
+/data1/quant_team/holmes-20261127/ICML26-Holmes/multisrc/Models/holmes/model.py:180: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  text_weight.masked_fill_(torch.tensor((1 - attention_mask), dtype=torch.bool), float("-inf"))
+SCORES tvr-multi 0 218
+SCORES tvr-multi 50 218
+SCORES tvr-multi 100 218
+SCORES tvr-multi 150 218
+SCORES tvr-multi 200 218
+METRICS tvr-multi {"clip_weight": 0.0, "frame_weight": 1.0, "R1": 15.713630105553007, "R5": 36.264341441027995, "R10": 47.14089031665902, "R100": 84.81872418540615, "SumR": 183.93758604864618}
+METRICS tvr-multi {"clip_weight": 0.2, "frame_weight": 0.8, "R1": 16.98026617714548, "R5": 38.72418540614961, "R10": 49.857732905002294, "R100": 86.31482331344654, "SumR": 191.87700780174393}
+METRICS tvr-multi {"clip_weight": 0.4, "frame_weight": 0.6, "R1": 17.586048646167967, "R5": 39.476824231298764, "R10": 51.28040385497935, "R100": 87.05828361633777, "SumR": 195.40156034878385}
+METRICS tvr-multi {"clip_weight": 0.5, "frame_weight": 0.5, "R1": 17.742083524552548, "R5": 39.596145020651676, "R10": 51.28958237723727, "R100": 87.22349701698026, "SumR": 195.85130793942176}
+METRICS tvr-multi {"clip_weight": 0.6, "frame_weight": 0.4, "R1": 17.34740706746214, "R5": 39.12804038549793, "R10": 51.050940798531435, "R100": 87.04910509407985, "SumR": 194.57549334557135}
+METRICS tvr-multi {"clip_weight": 0.8, "frame_weight": 0.19999999999999996, "R1": 16.37448370812299, "R5": 37.384121156493805, "R10": 48.6369894446994, "R100": 86.15878843506195, "SumR": 188.55438274437816}
+METRICS tvr-multi {"clip_weight": 1.0, "frame_weight": 0.0, "R1": 14.749885268471775, "R5": 34.309316200091786, "R10": 45.25929325378614, "R100": 84.16704910509408, "SumR": 178.4855438274438}
+COMPLETE tvr-multi

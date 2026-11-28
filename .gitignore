@@ -7,3 +7,9 @@
 /reproduction/results/*-preparation.lock
 /.venv/
 __pycache__/
+/.ppt_build/
+/.chart-data-*/
+/output/*
+!/output/Holmes_Paper_Presentation_Final.pptx
+/experiments/results/progress-*.json
+/experiments/results/eta-*.json

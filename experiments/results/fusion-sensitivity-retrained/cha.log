@@ -1,0 +1,26 @@
+
+Computing query2video scores:   0%|          | 0/14 [00:00<?, ?it/s]
+Computing query2video scores:   7%|▋         | 1/14 [00:03<00:50,  3.86s/it]
+Computing query2video scores:  14%|█▍        | 2/14 [00:06<00:37,  3.15s/it]
+Computing query2video scores:  21%|██▏       | 3/14 [00:09<00:33,  3.08s/it]
+Computing query2video scores:  29%|██▊       | 4/14 [00:11<00:27,  2.77s/it]
+Computing query2video scores:  36%|███▌      | 5/14 [00:15<00:26,  2.97s/it]
+Computing query2video scores:  43%|████▎     | 6/14 [00:17<00:21,  2.67s/it]
+Computing query2video scores:  50%|█████     | 7/14 [00:19<00:17,  2.48s/it]
+Computing query2video scores:  57%|█████▋    | 8/14 [00:21<00:14,  2.39s/it]
+Computing query2video scores:  64%|██████▍   | 9/14 [00:23<00:11,  2.24s/it]
+Computing query2video scores:  71%|███████▏  | 10/14 [00:25<00:08,  2.13s/it]
+Computing query2video scores:  79%|███████▊  | 11/14 [00:26<00:05,  1.97s/it]
+Computing query2video scores:  86%|████████▌ | 12/14 [00:28<00:03,  1.88s/it]
+Computing query2video scores:  93%|█████████▎| 13/14 [00:30<00:01,  1.90s/it]
+Computing query2video scores: 100%|██████████| 14/14 [00:31<00:00,  1.60s/it]
+Computing query2video scores: 100%|██████████| 14/14 [00:31<00:00,  2.24s/it]
+SCORES cha 0 75
+SCORES cha 50 75
+METRICS cha {"clip_weight": 0.0, "frame_weight": 1.0, "R1": 2.5, "R5": 8.064516129032258, "R10": 13.333333333333334, "R100": 52.096774193548384, "SumR": 75.99462365591398}
+METRICS cha {"clip_weight": 0.2, "frame_weight": 0.8, "R1": 2.4193548387096775, "R5": 8.413978494623656, "R10": 13.844086021505376, "R100": 52.74193548387097, "SumR": 77.41935483870968}
+METRICS cha {"clip_weight": 0.4, "frame_weight": 0.6, "R1": 2.5806451612903225, "R5": 8.655913978494624, "R10": 14.059139784946236, "R100": 52.82258064516129, "SumR": 78.11827956989247}
+METRICS cha {"clip_weight": 0.6, "frame_weight": 0.4, "R1": 2.6344086021505375, "R5": 8.870967741935484, "R10": 13.817204301075268, "R100": 52.876344086021504, "SumR": 78.1989247311828}
+METRICS cha {"clip_weight": 0.8, "frame_weight": 0.19999999999999996, "R1": 2.3118279569892475, "R5": 8.682795698924732, "R10": 13.951612903225806, "R100": 52.473118279569896, "SumR": 77.41935483870968}
+METRICS cha {"clip_weight": 1.0, "frame_weight": 0.0, "R1": 2.096774193548387, "R5": 8.387096774193548, "R10": 13.655913978494624, "R100": 52.25806451612903, "SumR": 76.39784946236558}
+COMPLETE cha

@@ -1,0 +1,62 @@
+
+Computing query2video scores:   0%|          | 0/45 [00:00<?, ?it/s]
+Computing query2video scores:   2%|▏         | 1/45 [00:00<00:34,  1.27it/s]
+Computing query2video scores:   4%|▍         | 2/45 [00:01<00:25,  1.67it/s]
+Computing query2video scores:   7%|▋         | 3/45 [00:01<00:22,  1.88it/s]
+Computing query2video scores:   9%|▉         | 4/45 [00:02<00:20,  2.05it/s]
+Computing query2video scores:  11%|█         | 5/45 [00:02<00:19,  2.07it/s]
+Computing query2video scores:  13%|█▎        | 6/45 [00:03<00:18,  2.12it/s]
+Computing query2video scores:  16%|█▌        | 7/45 [00:03<00:17,  2.23it/s]
+Computing query2video scores:  18%|█▊        | 8/45 [00:03<00:16,  2.30it/s]
+Computing query2video scores:  20%|██        | 9/45 [00:04<00:15,  2.33it/s]
+Computing query2video scores:  22%|██▏       | 10/45 [00:04<00:14,  2.46it/s]
+Computing query2video scores:  24%|██▍       | 11/45 [00:05<00:17,  1.90it/s]
+Computing query2video scores:  27%|██▋       | 12/45 [00:05<00:16,  2.05it/s]
+Computing query2video scores:  29%|██▉       | 13/45 [00:06<00:14,  2.15it/s]
+Computing query2video scores:  31%|███       | 14/45 [00:06<00:14,  2.14it/s]
+Computing query2video scores:  33%|███▎      | 15/45 [00:07<00:13,  2.21it/s]
+Computing query2video scores:  36%|███▌      | 16/45 [00:07<00:12,  2.24it/s]
+Computing query2video scores:  38%|███▊      | 17/45 [00:08<00:12,  2.24it/s]
+Computing query2video scores:  40%|████      | 18/45 [00:08<00:11,  2.28it/s]
+Computing query2video scores:  42%|████▏     | 19/45 [00:08<00:11,  2.35it/s]
+Computing query2video scores:  44%|████▍     | 20/45 [00:09<00:10,  2.44it/s]
+Computing query2video scores:  47%|████▋     | 21/45 [00:09<00:10,  2.36it/s]
+Computing query2video scores:  49%|████▉     | 22/45 [00:10<00:09,  2.39it/s]
+Computing query2video scores:  51%|█████     | 23/45 [00:10<00:09,  2.41it/s]
+Computing query2video scores:  53%|█████▎    | 24/45 [00:10<00:09,  2.31it/s]
+Computing query2video scores:  56%|█████▌    | 25/45 [00:11<00:08,  2.29it/s]
+Computing query2video scores:  58%|█████▊    | 26/45 [00:11<00:08,  2.37it/s]
+Computing query2video scores:  60%|██████    | 27/45 [00:12<00:07,  2.36it/s]
+Computing query2video scores:  62%|██████▏   | 28/45 [00:12<00:07,  2.29it/s]
+Computing query2video scores:  64%|██████▍   | 29/45 [00:13<00:06,  2.40it/s]
+Computing query2video scores:  67%|██████▋   | 30/45 [00:13<00:06,  2.35it/s]
+Computing query2video scores:  69%|██████▉   | 31/45 [00:13<00:06,  2.23it/s]
+Computing query2video scores:  71%|███████   | 32/45 [00:14<00:05,  2.25it/s]
+Computing query2video scores:  73%|███████▎  | 33/45 [00:14<00:05,  2.23it/s]
+Computing query2video scores:  76%|███████▌  | 34/45 [00:15<00:04,  2.28it/s]
+Computing query2video scores:  78%|███████▊  | 35/45 [00:15<00:05,  1.98it/s]
+Computing query2video scores:  80%|████████  | 36/45 [00:16<00:04,  1.81it/s]
+Computing query2video scores:  82%|████████▏ | 37/45 [00:17<00:05,  1.38it/s]
+Computing query2video scores:  84%|████████▍ | 38/45 [00:18<00:04,  1.58it/s]
+Computing query2video scores:  87%|████████▋ | 39/45 [00:18<00:03,  1.80it/s]
+Computing query2video scores:  89%|████████▉ | 40/45 [00:18<00:02,  1.97it/s]
+Computing query2video scores:  91%|█████████ | 41/45 [00:19<00:01,  2.11it/s]
+Computing query2video scores:  93%|█████████▎| 42/45 [00:19<00:01,  2.17it/s]
+Computing query2video scores:  96%|█████████▌| 43/45 [00:20<00:00,  2.15it/s]
+Computing query2video scores:  98%|█████████▊| 44/45 [00:20<00:00,  2.25it/s]
+Computing query2video scores: 100%|██████████| 45/45 [00:20<00:00,  2.77it/s]
+Computing query2video scores: 100%|██████████| 45/45 [00:20<00:00,  2.16it/s]
+SCORES act 0 316
+SCORES act 50 316
+SCORES act 100 316
+SCORES act 150 316
+SCORES act 200 316
+SCORES act 250 316
+SCORES act 300 316
+METRICS act {"clip_weight": 0.0, "frame_weight": 1.0, "R1": 8.36666031866946, "R5": 26.87107217672824, "R10": 39.40836666031867, "R100": 78.53742144353457, "SumR": 153.18352059925093}
+METRICS act {"clip_weight": 0.2, "frame_weight": 0.8, "R1": 8.56979622928966, "R5": 27.239256014727353, "R10": 40.06221037262743, "R100": 78.88656128991303, "SumR": 154.7578239065575}
+METRICS act {"clip_weight": 0.4, "frame_weight": 0.6, "R1": 8.753888148289215, "R5": 27.436043928140673, "R10": 40.34152224973021, "R100": 78.93734526756808, "SumR": 155.46879959372816}
+METRICS act {"clip_weight": 0.6, "frame_weight": 0.4, "R1": 8.73484415666857, "R5": 27.22021202310671, "R10": 40.36056624135085, "R100": 78.84847330667175, "SumR": 155.16409572779787}
+METRICS act {"clip_weight": 0.8, "frame_weight": 0.19999999999999996, "R1": 8.538056243255253, "R5": 26.737764235383736, "R10": 39.62419856535263, "R100": 78.33428553291436, "SumR": 153.23430457690597}
+METRICS act {"clip_weight": 1.0, "frame_weight": 0.0, "R1": 8.21430838570431, "R5": 25.92522059290294, "R10": 39.014790833492036, "R100": 77.64235383736431, "SumR": 150.7966736494636}
+COMPLETE act

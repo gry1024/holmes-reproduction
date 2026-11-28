@@ -1,0 +1,37 @@
+
+Computing query2video scores:   0%|          | 0/22 [00:00<?, ?it/s]
+Computing query2video scores:   5%|▍         | 1/22 [00:00<00:13,  1.51it/s]
+Computing query2video scores:   9%|▉         | 2/22 [00:01<00:12,  1.56it/s]
+Computing query2video scores:  14%|█▎        | 3/22 [00:01<00:11,  1.67it/s]
+Computing query2video scores:  18%|█▊        | 4/22 [00:02<00:09,  1.94it/s]
+Computing query2video scores:  23%|██▎       | 5/22 [00:02<00:08,  1.95it/s]
+Computing query2video scores:  27%|██▋       | 6/22 [00:03<00:07,  2.17it/s]
+Computing query2video scores:  32%|███▏      | 7/22 [00:03<00:06,  2.29it/s]
+Computing query2video scores:  36%|███▋      | 8/22 [00:03<00:05,  2.39it/s]
+Computing query2video scores:  41%|████      | 9/22 [00:04<00:05,  2.39it/s]
+Computing query2video scores:  45%|████▌     | 10/22 [00:04<00:04,  2.44it/s]
+Computing query2video scores:  50%|█████     | 11/22 [00:05<00:04,  2.45it/s]
+Computing query2video scores:  55%|█████▍    | 12/22 [00:05<00:03,  2.53it/s]
+Computing query2video scores:  59%|█████▉    | 13/22 [00:05<00:03,  2.44it/s]
+Computing query2video scores:  64%|██████▎   | 14/22 [00:06<00:03,  2.49it/s]
+Computing query2video scores:  68%|██████▊   | 15/22 [00:06<00:02,  2.51it/s]
+Computing query2video scores:  73%|███████▎  | 16/22 [00:07<00:02,  2.53it/s]
+Computing query2video scores:  77%|███████▋  | 17/22 [00:07<00:01,  2.57it/s]
+Computing query2video scores:  82%|████████▏ | 18/22 [00:07<00:01,  2.58it/s]
+Computing query2video scores:  86%|████████▋ | 19/22 [00:08<00:01,  2.61it/s]
+Computing query2video scores:  91%|█████████ | 20/22 [00:08<00:00,  2.63it/s]
+Computing query2video scores:  95%|█████████▌| 21/22 [00:08<00:00,  2.61it/s]
+Computing query2video scores: 100%|██████████| 22/22 [00:09<00:00,  2.75it/s]
+Computing query2video scores: 100%|██████████| 22/22 [00:09<00:00,  2.38it/s]
+SCORES tvr 0 218
+SCORES tvr 50 218
+SCORES tvr 100 218
+SCORES tvr 150 218
+SCORES tvr 200 218
+METRICS tvr {"clip_weight": 0.0, "frame_weight": 1.0, "R1": 15.474988526847177, "R5": 36.81505277650298, "R10": 47.976135842129416, "R100": 86.63607159247361, "SumR": 186.9022487379532}
+METRICS tvr {"clip_weight": 0.2, "frame_weight": 0.8, "R1": 16.42955484167049, "R5": 37.90729692519504, "R10": 49.21523634694814, "R100": 87.26021110601194, "SumR": 190.8122992198256}
+METRICS tvr {"clip_weight": 0.4, "frame_weight": 0.6, "R1": 16.613125286828822, "R5": 38.476365305185865, "R10": 49.977053694355206, "R100": 87.45296007342817, "SumR": 192.51950435979808}
+METRICS tvr {"clip_weight": 0.6, "frame_weight": 0.4, "R1": 16.77833868747132, "R5": 38.320330426801284, "R10": 50.224873795318956, "R100": 87.26938962826985, "SumR": 192.5929325378614}
+METRICS tvr {"clip_weight": 0.8, "frame_weight": 0.19999999999999996, "R1": 16.45709040844424, "R5": 37.67783386874713, "R10": 49.54566314823313, "R100": 86.79210647085819, "SumR": 190.4726938962827}
+METRICS tvr {"clip_weight": 1.0, "frame_weight": 0.0, "R1": 15.658558972005507, "R5": 36.32859109683341, "R10": 48.242312987609, "R100": 86.09453877925654, "SumR": 186.32400183570445}
+COMPLETE tvr
